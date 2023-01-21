@@ -977,6 +977,10 @@ a:hover {
   position: relative;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1031,8 +1035,20 @@ a:hover {
   min-height: 100vh;
 }
 
+.w-\[12rem\] {
+  width: 12rem;
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-\[120rem\] {
+  width: 120rem;
+}
+
+.w-96 {
+  width: 24rem;
 }
 
 .max-w-4xl {
@@ -1114,6 +1130,10 @@ a:hover {
   padding-right: 1rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1139,6 +1159,14 @@ a:hover {
 
 .font-light {
   font-weight: 300;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
 
 .tracking-wide {
