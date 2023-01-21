@@ -1,16 +1,16 @@
 {{ define "main" }} {{ $permalink := .RelPermalink }}
-
+<h1>About</h1>
 <div class="relative flex">
   <article
-    class="bg-white p-8 prose shadow border border-gray-100 max-w-none prose-stone dark:prose-invert w-full mx-auto h-fit dark:prose-invert prose-img:mx-auto"
+    class="p-8 shadow border dark:py-8 bg-white dark:bg-inherit max-w-none prose-stone dark:prose-invert w-full mx-auto h-fit dark:prose-invert prose-img:mx-auto"
   >
-    {{ $title := .Params.title }}
-    <h1>{{ $title }}</h1>
-    {{ if .Date }}
-    <p class="text-sm text-slate-500 !mb-8">
-      {{ .Date.Format "January 2, 2006" }}
-    </p>
-    {{ end }} {{ with .Params.images }} {{- range first 1 . }}
+<!--    {{ $title := .Params.title }}-->
+<!--    {{ if .Date }}-->
+<!--    <p class="text-sm !mb-8">-->
+<!--      {{ .Date.Format "January 2, 2006" }}-->
+<!--    </p>-->
+<!--    {{ end }} -->
+    {{ with .Params.images }} {{- range first 1 . }}
     <img
       class="max-w-full mx-auto mb-4 rounded"
       src="{{ . }}"

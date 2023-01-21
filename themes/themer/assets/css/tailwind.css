@@ -12,6 +12,9 @@
   h2 {
     @apply text-xl;
   }
+  a:hover {
+    @apply text-blue-400;
+  }
 }
 
 body {
