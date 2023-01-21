@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+{{- partial "head.html" . -}}
+<body class="bg-gray-100 dark:bg-gray-500">
+<div class="max-w-4xl mx-auto">
+    {{- partial "header.html" . -}}
+    <div class="py-4 prose max-w-4xl dark:prose-invert mx-auto">
+        {{- block "main" . }}{{- end }}
+    </div>
+    {{- partial "footer.html" . -}}
+</div>
+</body>
+</html>

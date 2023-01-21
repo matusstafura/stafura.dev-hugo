@@ -1,7 +1,7 @@
 baseURL: 'https://stafura.dev/'
 languageCode: en-us
 title: stafura.dev
-theme: aina
+theme: themer
 enableRobotsTXT: true
 markup:
   goldmark:

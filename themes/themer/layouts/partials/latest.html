@@ -1,0 +1,11 @@
+<h3>Latest Articles</h3>
+<div>
+    <article>
+    {{range (where .Site.RegularPages "Type" "blogs") | first 5 }}
+        <div>
+            <a href="{{.Permalink}}">{{.Title}}</a>
+            <span> {{ if .Date }} {{ .Date.Format "January 2, 2006" }} {{ end }} </span>
+        </div>
+    {{end}}
+    </article>
+</div>

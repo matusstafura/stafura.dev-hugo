@@ -1,0 +1,13 @@
+{{ define "main" }}
+<!-- <h1 class="title">{{ .Title }}</h1> -->
+{{ .Content }} {{ range .Pages }}
+<div class="mb-8">
+  <a href="{{ .Permalink }}" class="text-4xl font-bold">{{ .Title }}</a>
+  <div class="text-sm text-gray-500 mt-4">
+    <span
+      >{{ .Params.Author }} | {{ .PublishDate.Format "January 2, 2006" }}</span
+    >
+  </div>
+  <p>{{ .Content | truncate 100 }}</p>
+</div>
+{{ end }} {{ end }}

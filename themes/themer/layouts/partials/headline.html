@@ -1,0 +1,13 @@
+{{ with .Params.headline }}
+
+<section>
+  <h1 class="text-2xl font-bold">{{ .title }}</h1>
+  <p class="py-4">{{ .content | markdownify}}</p>
+  {{ if .button.enable }} 
+    {{ with .button }}
+    <a href="{{ .link | relURL }}" title="{{ .label }}" class="bg-green-300 py-2 px-4">{{ .label }}</a>
+    {{ end }} 
+  {{ end }}
+</section>
+
+{{ end }} 
