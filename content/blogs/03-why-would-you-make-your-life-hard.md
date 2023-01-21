@@ -1,6 +1,5 @@
 ---
 title: "Why would you make your life hard"
-url: "why-would-you-make-your-life-hard"
 short: "Increase the chance of success, not only by proper planning but also by avoiding making mistakes."
 tags: 
     - business

@@ -1,6 +1,5 @@
 ---
 title: "Know when to end a project"
-url: "know-when-to-end-a-project"
 short: "Failing to close a project when it should be or at all means that it still has some importance and continues to drain our resources."
 tags: 
     - business

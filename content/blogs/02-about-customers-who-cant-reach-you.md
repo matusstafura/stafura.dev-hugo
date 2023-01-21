@@ -1,6 +1,5 @@
 ---
 title: "About customers who can't reach you"
-url: "about-customers-who-cant-reach-you"
 short: "Increase the probability of sales by merely opening new doors to potential customers."
 tags: 
     - marketing
