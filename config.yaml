@@ -11,6 +11,9 @@ sitemap:
   changefreq: monthly
   filename: sitemap.xml
   priority: 0.5
+Params:
+  google:
+    tagmanagerid: GTM-N8KF2Q3
 menu:
   main:
     - name: Home
