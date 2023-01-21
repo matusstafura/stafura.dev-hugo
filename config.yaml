@@ -1,0 +1,34 @@
+baseURL: 'https://stafura.dev/'
+languageCode: en-us
+title: stafura.dev
+theme: aina
+enableRobotsTXT: true
+markup:
+  goldmark:
+    renderer:
+      hardWraps: true
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 1
+    - name: Blog
+      url: /blogs
+      weight: 2
+    - name: About
+      url: /about
+      weight: 3
+    - name: GitHub
+      url: 'https://github.com/matusstafura'
+      weight: 4
+  footer:
+    - name: Cookies
+      url: /content/cookies
+      weight: 1
+    - name: Privacy Policy
+      url: /content/privacy-policy
+      weight: 2
