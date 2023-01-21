@@ -1,8 +1,11 @@
 {{ define "main" }}
+<h1>Blogs</h1>
 <div>
+  Dev articles are published here: https://dev.to/matusstafura
   <h3>Latest Articles</h3>
   {{ .Content }} {{ range .Pages }}
-  <article class="flex flex-col justify-between py-8" >
+  <article
+    class="bg-white p-8 shadow border border-gray-100 max-w-none prose-stone dark:prose-invert w-full mx-auto h-fit dark:prose-invert prose-img:mx-auto">
       <div class="mb-4">
         <a href="{{ .Permalink }}" class="text-xl font-semibold tracking-wide" >{{ .Title }}</a >
       </div>
