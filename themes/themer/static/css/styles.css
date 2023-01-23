@@ -428,8 +428,8 @@ body {
 }
 
 h1 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -439,11 +439,6 @@ h1 {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
-}
-
-h2 {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 a:hover {
@@ -981,6 +976,10 @@ a:hover {
   margin: auto;
 }
 
+.m-0 {
+  margin: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -1035,20 +1034,12 @@ a:hover {
   min-height: 100vh;
 }
 
-.w-\[12rem\] {
-  width: 12rem;
+.w-96 {
+  width: 24rem;
 }
 
 .w-full {
   width: 100%;
-}
-
-.w-\[120rem\] {
-  width: 120rem;
-}
-
-.w-96 {
-  width: 24rem;
 }
 
 .max-w-4xl {
@@ -1157,10 +1148,6 @@ a:hover {
   font-weight: 600;
 }
 
-.font-light {
-  font-weight: 300;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -1194,41 +1181,16 @@ a:hover {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-body {
-  --tw-text-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-text-opacity));
-}
+@font-face {
+  font-family: "JetBrains Mono";
 
-@media (prefers-color-scheme: dark) {
-  body {
-    --tw-bg-opacity: 1;
-    background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-  }
+  font-style: normal;
 
-  body {
-    --tw-text-opacity: 1;
-    color: rgb(248 250 252 / var(--tw-text-opacity));
-  }
+  font-weight: 400;
 
-  body *::-moz-selection {
-    --tw-bg-opacity: 1;
-    background-color: rgb(71 85 105 / var(--tw-bg-opacity));
-  }
+  font-display: swap;
 
-  body *::selection {
-    --tw-bg-opacity: 1;
-    background-color: rgb(71 85 105 / var(--tw-bg-opacity));
-  }
-
-  body::-moz-selection {
-    --tw-bg-opacity: 1;
-    background-color: rgb(71 85 105 / var(--tw-bg-opacity));
-  }
-
-  body::selection {
-    --tw-bg-opacity: 1;
-    background-color: rgb(71 85 105 / var(--tw-bg-opacity));
-  }
+  src: url("../fonts/JetBrainsMono-Regular.ttf") format("truetype");
 }
 
 .hover\:text-blue-400:hover {

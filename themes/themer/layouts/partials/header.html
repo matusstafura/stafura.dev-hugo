@@ -7,7 +7,7 @@
             <nav class="hidden dark:text-white lg:block">
                 {{ $currentPage := . }}
                 {{ range .Site.Menus.main }}
-                <a class="pl-4 font-light hover:text-blue-400 sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+                <a class="pl-4 hover:text-blue-400 sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
                 {{ end }}
             </nav>
         </div>
@@ -15,7 +15,7 @@
             <nav>
                 {{ $currentPage := . }}
                 {{ range .Site.Menus.main }}
-                <a class="pr-4 font-light hover:text-blue-400 sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+                <a class="pr-4 hover:text-blue-400 sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
                 {{ end }}
             </nav>
         </div>

@@ -5,7 +5,7 @@
     <div class="flex">
       {{ $currentPage := . }}
         {{ range .Site.Menus.footer }}
-            <a class="pl-4 font-light hover:text-blue-400 sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+            <a class="pl-4 hover:text-blue-400 sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
         {{ end }}
     </div>
   </div>

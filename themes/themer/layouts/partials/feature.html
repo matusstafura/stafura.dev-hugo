@@ -1,6 +1,6 @@
 {{ with .Params.feature }} {{ if .enable }}{{ .title}} {{ range .feature_item }}
 <section class="container grid-md">
-  <h4>{{ .title }}</h4>
+  <h3>{{ .title }}</h3>
   <p>
     <p>{{ .description }}{{ if .link }} </p>
     Try <a href="{{ .link }}">{{ .link }}</a>{{ end }}
