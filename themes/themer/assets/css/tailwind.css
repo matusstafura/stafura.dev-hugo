@@ -7,16 +7,17 @@
     font-family: "JetBrains Mono", monospace;
   }
   h1 {
-    @apply text-xl text-white dark:text-white;
-  }
-  h2 {
-    @apply text-xl;
+    @apply text-sm text-white dark:text-white;
   }
   a:hover {
     @apply text-blue-400;
   }
 }
 
-body {
-  @apply text-slate-900 dark:bg-slate-900 dark:text-slate-50 dark:selection:bg-slate-600;
+@font-face {
+    font-family: "JetBrains Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/JetBrainsMono-Regular.ttf") format("truetype");
 }
