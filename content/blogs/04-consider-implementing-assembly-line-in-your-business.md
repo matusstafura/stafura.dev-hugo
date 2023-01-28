@@ -1,11 +1,12 @@
 ---
 title: "Consider implementing assembly line in your business"
-short: "When the company starts, it usually has one or two people who take care of everything. Having the employees performing multiple tasks is inneficient."
+description: "When the company starts, it usually has one or two people who take care of everything. Having the employees performing multiple tasks is inneficient."
 tags: 
   - business
   - marketing
 date: 2023-01-23
 author: "Matus Stafura"
+image: /images/blog/assembly_line.jpg
 ---
 
 > He who is everywhere is nowhere. - Seneca

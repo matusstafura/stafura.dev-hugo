@@ -1,5 +1,7 @@
 ---
-title: "Matus Stafura"
+title: "Matus Stafura homepage"
+description: "Personal website of Matus Stafura"
+image: /images/home/og_home.jpg
 
 ### BLOCKS ###
 feature:

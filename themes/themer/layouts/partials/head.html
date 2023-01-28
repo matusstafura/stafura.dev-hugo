@@ -1,8 +1,26 @@
 <head>
     {{ partial "ga-head.html" . }}
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title> {{ block "title" . }} {{- .Title }} - {{ .Site.Title -}} {{ end }} </title>
+
+    <title>{{ block "title" . }} {{- .Title }} - {{ .Site.Title -}} {{ end }}</title>
+    <meta name="title" content="{{- .Title }} - {{ .Site.Title -}}">
+    <meta name="description" content="{{- .Description -}}">
+
+    <!-- View Type -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Seo -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@matusstafura" />
+    <meta name="twitter:creator" content="@matusstafura" />
+    <meta name="twitter:image" content="{{- .Description }}" />
+
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:title" content="{{- .Title }}" />
+    <meta property="og:description" content="{{- .Description }}" />
+    {{if .Params.Image}}<meta property="og:image" content=" {{- .Params.Image | absURL}}" />{{ end }}
 
     <!-- Favicons -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>

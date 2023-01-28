@@ -1,6 +1,6 @@
 ---
 title: "Why would you make your life hard"
-short: "Increase the chance of success, not only by proper planning but also by avoiding making mistakes."
+description: "Increase the chance of success, not only by proper planning but also by avoiding making mistakes."
 tags: 
     - business
 date: "2023-01-16"
