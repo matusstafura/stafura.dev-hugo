@@ -1,11 +1,8 @@
 ---
 title: "Know when to end a project"
 description: "Failing to close a project when it should be or at all means that it still has some importance and continues to drain our resources."
-tags: 
-    - business
-    - marketing
+tags: [ business, marketing ]
 date: 2023-01-02
-author: "Matus Stafura"
 ---
 
 >Nothing happens to the wise man against his expectation. — Seneca

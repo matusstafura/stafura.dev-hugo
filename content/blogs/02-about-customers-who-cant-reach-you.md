@@ -1,12 +1,8 @@
 ---
 title: "About customers who can't reach you"
 description: "Increase the probability of sales by merely opening new doors to potential customers."
-tags: 
-    - marketing
-    - business
-    - awareness
+tags: [ marketing, business, awareness ]
 date: "2023-01-09"
-author: "Matus Stafura"
 image: /images/blog/octopus.webp
 ---
 
