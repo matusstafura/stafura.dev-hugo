@@ -4,9 +4,7 @@
   "description": "Minimal Hugo theme for your blog",
   "main": "index.js",
   "scripts": {
-    "dev": "hugo serve",
-    "dev:css": "npx tailwindcss -i ./assets/css/tailwind.css -o ./static/css/styles.css -w",
-    "build:css": "npx tailwindcss -i ./themes/themer/assets/css/tailwind.css -o ./themes/themer/static/css/styles.css -m"
+    "dev": "npx tailwindcss -i ./assets/css/tailwind.css -o ./static/css/styles.css -w"
   },
   "repository": {
     "type": "git",
