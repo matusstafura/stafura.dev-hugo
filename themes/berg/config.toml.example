@@ -1,0 +1,123 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = "Berg Docs"
+theme = 'berg'
+
+# Provide Google Analytics 4 (GA4)
+# Example "G-XXXXXXXXXXXX"
+# leave empty or omit to disable
+googleAnalytics = ""
+
+# Site settings
+[params]
+
+  # Upload your logo to the `static` folder
+  # Set the path, excluding `static`, or
+  # leave the empty string to disable -> ""
+  # Example: "/images/logo.png"
+  logo = ""
+
+  # Set the path for favicon
+  # Example: "/images/favicon.ico"
+  favicon = ""
+
+  # Enter number of posts to display per page.
+  # Should be an unsigned integer.
+  # default is 10
+  paginate = 10
+
+  # Enter how many posts to display in 
+  # shortcode latest-posts
+  # Should be an unsigned integer.
+  # default is 3
+  latestPostsCount = 6
+
+  # Global date format
+  # Please DO NOT change the numbers in the date format.
+  # It must be 02 for day, Jan or 01 for month, 2006 for year
+  # Examples 02 Jan 2006, 01/02/2006, 02-01-2006
+  date_format = "2006-01-02"
+
+  # enable or disable the breadcrumbs
+  # true or false
+  breadcrumbs = false
+
+  # A description of the site.
+  description = ""
+
+  # Backlink to the original theme
+  createdBy = true
+
+  # custom JS files
+  # place in static folder
+  # Example: ['/js/custom.js']
+  custom_js = []
+
+[params.posts]
+
+  # Show prev/next post links
+  showPrevNext = true
+
+  # Show profile in posts
+  # make sure to set the author name, email, bio
+  # and avatar in the author section
+  showProfile = false
+
+  # Show Author Name in posts
+  # make sure to set the author name in the post
+  # otherwise it uses [params.author] if not set
+  showAuthor = false
+
+  # Show Date in posts
+  # make sure to set the date in the post
+  showDate = false
+
+  # Show categories in posts
+  showCategories = true
+
+  # Show tags in posts
+  showTags = true
+
+  # Show share post in posts
+  # [params.social]
+  showShare = true
+
+[params.author]
+  # Enter your name
+  name = ""
+  # Enter your email
+  email = ""
+  # Enter your bio
+  bio = ""
+  # Enter your profile picture
+  # Example: "/images/profile.jpg"
+  avatar = ""
+
+[social]
+  # enter your twitter handle without @
+  twitter = "johndoe"
+
+[markup]
+  [markup.highlight]
+    style = 'hrdark'
+
+[params.social]
+    
+  # What social links to show in the posts
+  twitter = true
+  linkedin = true
+  reddit = true
+  facebook = true
+  telegram = true
+
+# Third party services
+[params.verification]
+
+  google = ""
+  bing = ""
+
+[params.plugins]
+  # TAG MANAGER Google Tag Manager
+  # Enter the full ID (like "GTM-XXXXXX")
+  # or leave empty string to disable -> ""
+  tagmanager = ""

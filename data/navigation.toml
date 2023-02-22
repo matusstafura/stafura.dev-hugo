@@ -1,0 +1,25 @@
+[[header]]
+  name = "Home"
+  url = "/"
+  weight = 1
+[[header]]
+  name = "Blogs"
+  url = "/blogs/"
+  weight = 2
+[[header]]
+  name = "About"
+  url = "/about/"
+  weight = 3
+[[header]]
+  name = "GitHub"
+  url = "https://github.com/matusstafura"
+  weight = 4
+
+[[footer]]
+  name = "Cookies"
+  url = "/cookies/"
+  weight = 1
+[[footer]]
+  name = "Privacy Policy"
+  url = "/privacy-policy/"
+  weight = 2

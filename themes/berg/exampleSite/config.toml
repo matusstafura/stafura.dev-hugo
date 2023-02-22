@@ -1,0 +1,23 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = "Berg Docs"
+theme = 'berg'
+themesDir = '../..'
+
+[params]
+  logo = '/images/logo.svg'
+  favicon = 'images/logo.svg'
+  description = 'A documentation for a simple, clean, and responsive Hugo theme.'
+  date_format = 'January 2, 2006'
+  breadcrumbs = false
+  custom_js = ['js/_custom.js']
+
+[markup]
+  [markup.highlight]
+    style = 'github-dark'
+
+[params.posts]
+  showProfile = false
+
+
+
