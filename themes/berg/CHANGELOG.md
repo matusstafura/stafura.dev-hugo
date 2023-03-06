@@ -2,6 +2,20 @@
 
 All the changes made to Berg theme for Hugo.
 
+## v0.5.1 - 2023-02-25
+
+- add horizonal line menu, footer
+- style: post
+
+## v0.5.0 - 2023-02-24
+
+- new shortcode horizontal_card
+ 
+## v0.4.1 - 2023-02-23
+
+- fix: margin if no log
+- fix: default date_format
+ 
 ## v0.4.0 - 2023-02-18
 
 - feat: add darkmode
