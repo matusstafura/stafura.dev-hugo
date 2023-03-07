@@ -3,8 +3,8 @@
   url = "/"
   weight = 1
 [[header]]
-  name = "Blogs"
-  url = "/blogs/"
+  name = "Blog"
+  url = "/posts/"
   weight = 2
 [[header]]
   name = "About"

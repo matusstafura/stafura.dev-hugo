@@ -1,9 +1,6 @@
 {{ define "main" }}
 <h1>Latest Articles</h1>
 <div>
-  <p>
-    Dev articles are published here: <a href="https://dev.to/matusstafura" target="_blank" class="hover:text-blue-400">https://dev.to/matusstafura</a>
-  </p>
   {{ .Content }} {{ range .Pages }}
   <article
     class="p-8 shadow border space-y-4 dark:py-8 bg-white dark:bg-inherit mb-4 max-w-none w-full mx-auto h-fit prose-img:mx-auto">
