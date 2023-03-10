@@ -4,9 +4,6 @@ date: 2023-01-18
 author: Matus Stafura
 ---
 
-Privacy Policy for Matus Stafura
-================================
-
 At https://stafura.dev, accessible from https://stafura.dev, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by https://stafura.dev and how we use it.
 
 If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.

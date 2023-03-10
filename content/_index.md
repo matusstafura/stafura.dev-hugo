@@ -4,7 +4,7 @@ description: "Personal website of Matus Stafura"
 image: /images/home/og_home.jpg
 
 ### BLOCKS ###
-feature:
+horizontal_card:
   enable: true
   feature_item:
     - title: "Berg Hugo Theme"
@@ -24,3 +24,8 @@ feature:
 # Hi,
 
 here are my latest solo projects:
+
+{{< horizontal_card >}}
+
+### Latest Posts:
+{{< latest-posts-horizontal >}}

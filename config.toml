@@ -1,7 +1,7 @@
 baseURL = "https://stafura.dev/"
 languageCode = "en-us"
 title = "Matus Stafura"
-theme = "themer"
+theme = "berg"
 enableRobotsTXT = true
 
 [markup.goldmark.renderer]
@@ -12,11 +12,15 @@ changefreq = "monthly"
 filename = "sitemap.xml"
 priority = 0.5
 
-[Params]
+[params]
 date_format = "January 2, 2006"
 
-  [Params.google]
-  tagmanagerid = "GTM-N8KF2Q3"
+[params.google]
+tagmanager = "GTM-N8KF2Q3"
+
+[params.posts]
+  showPrevNext = true
+  showTags = true
 
 [taxonomies]
 tag = "tags"

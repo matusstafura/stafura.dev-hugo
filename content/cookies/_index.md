@@ -4,9 +4,6 @@ date: 2021-12-18
 author: Matus Stafura
 ---
 
-Cookie Policy for Official Matus Stafura website
-================================================
-
 This is the Cookie Policy for Official Matus Stafura website, accessible from https://stafura.dev
 
 **What Are Cookies**
