@@ -1,8 +1,0 @@
-{{ define "main" }}
-<h1>Tags</h1>
-<div class="mb-8">
-  {{ .Content }} {{ range .Pages }}
-    <a href="{{ .Permalink }}" class="font-bold">{{ .Title }}</a><br/>
-  {{ end }}
-</div>
-{{ end }}
