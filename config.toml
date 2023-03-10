@@ -14,13 +14,14 @@ priority = 0.5
 
 [params]
 date_format = "January 2, 2006"
+custom_css = ["css/_custom.css"]
 
 [params.google]
 tagmanager = "GTM-N8KF2Q3"
 
 [params.posts]
-  showPrevNext = true
-  showTags = true
+showPrevNext = true
+showTags = true
 
 [taxonomies]
 tag = "tags"
