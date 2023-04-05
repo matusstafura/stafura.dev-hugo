@@ -10,13 +10,12 @@ author: Matus Stafura
 I'm a developer from Slovakia. I am passionate about open-source software, privacy, best practices, performance, idiomatic code, user and developer experience. I write articles about software development and marketing.
 
 I use: 
-- PHP(Laravel)
-- Python
-- Go
-- Javascript(NextJs, React or Vuejs)
+- PHP,
+- Go,
+- Typescript,
 - TailwindCSS, 
-- shell, 
-- vim, ... 
+- bash, 
+- neovim + tmux
 
 Interested in web development, design and writing.
 
