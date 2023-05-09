@@ -5,27 +5,34 @@ image: /images/about/og_about.jpg
 author: Matus Stafura
 ---
 
-![avatar](/images/about/avatar.png)Hello, My name is **Matus Stafura**.
+![avatar](/images/about/avatar.png)
 
-I'm a developer from Slovakia. I am passionate about open-source software, privacy, best practices, performance, idiomatic code, user and developer experience. I write articles about software development and marketing.
+Hello, My name is **Matus Stafura**.
+
+I'm a developer from Slovakia. I am passionate about open-source software, SEO, privacy, best practices, performance, idiomatic code, user and developer experience. 
+
+I write articles about software development and marketing.
 
 I use: 
 - PHP,
 - Go,
-- Typescript,
+- Javascript/Typescript,
 - TailwindCSS, 
 - bash, 
 - neovim + tmux
 
-Interested in web development, design and writing.
+Interested in programming, SEO, writing.
 
-Dev articles @ https://dev.to/matusstafura
+dev articles @ https://dev.to/matusstafura
 
 #### You can reach me:
 
 [![stafura github](/images/about/github.svg)](https://github.com/matustafura) 
 
 [![stafura twitter](/images/about/twitter.svg)](https://twitter.com/matusstafura)
+
+[![stafura linkedin](/images/about/linkedin.svg)](https://www.linkedin.com/in/matus-stafura/)
+
 
 #### Support:
 

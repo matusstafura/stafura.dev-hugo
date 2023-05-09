@@ -11,6 +11,8 @@ themesDir = '../..'
   date_format = 'January 2, 2006'
   breadcrumbs = false
   custom_js = ['js/_custom.js']
+  custom_css = ['css/_custom.css']
+  showDarkModeToggle = true
 
 [markup]
   [markup.highlight]
@@ -19,5 +21,20 @@ themesDir = '../..'
 [params.posts]
   showProfile = false
 
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+[[menu.main]]
+  name = "Docs"
+  url = "/docs/"
+  weight = 2
+[[menu.main]]
+  name = "Demo"
+  url = "https://berg.stafura.dev/"
+  weight = 4
 
-
+[[menu.footer]]
+  name = "Privacy Policy"
+  url = "/privacy-policy/"
+  weight = 1

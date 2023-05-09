@@ -12,6 +12,7 @@ draft: false
 - [Menu](#menu)
 - [Settings](#settings)
 - [Shortcodes](#shortcodes)
+- [Languages](#languages)
 - [Deployment](#deployment)
 - [Development](#development)
 
@@ -64,30 +65,24 @@ you can visit `/posts/my-first-post` to see the posts.
 
 ## Menu
 
-To create menu, create a file `navigation.toml` in `data` folder:
-```
-/data/navigation.toml
-```
+To create menu, edit config file:
 
 You can add:
-- header (navbar menu)
-- footer (footer menu)
+- menu.main (navbar menu)
+- menu.footer (footer menu)
 
 Example:
 ```toml
-[[header]]
+[[menu.main]]
   name = "Home"
   url = "/"
   weight = 1
-[[header]]
+[[menu.main]]
   name = "Posts"
   url = "/posts/"
   weight = 2
-[[header]]
-  name = "Contact"
-  url = "/contact/"
-  weight = 3
-[[footer]]
+
+[[menu.footer]]
   name = "Privacy Policy"
   url = "/privacy-policy/"
   weight = 1
@@ -144,15 +139,23 @@ googleAnalytics = ""
   createdBy = true
 
   # custom JS files
-  # upload to `static` folder
-  # Example: ["/js/custom.js"]
+  # upload in `assets` folder
+  # Example: ['js/_custom.js']
   custom_js = []
 
-  
   # custom CSS files
-  # upload to `static` folder
-  # Example: ["/js/_custom.css"]
+  # upload in `assets` folder
+  # Example: ['css/_custom.css']
   custom_css = []
+
+  # shows language switcher
+  # for multilingual site
+  # true or false
+  showLanguageSelector = false
+
+  # shows dark mode toggle
+  # true or false
+  showDarkModeToggle = false
 
 [params.posts]
 
@@ -248,6 +251,13 @@ Creates a horizontal card. In markdown call shortcode and add info in
 
 ```md
 {{</* horizontal_card */>}}
+
+- ### Button
+
+Creates a button with link
+
+```md
+{{</* button link="https://www.example.com/" text="Click me!" */>}}
 ```
 
 Example:
@@ -270,6 +280,33 @@ horizontal_card:
       button: "Public repo here"
 ---
 ```
+
+## Languages
+
+To make site multilingual, see https://gohugo.io/content-management/multilingual/.
+
+#### Define languages in config file
+```toml
+defaultContentLanguage = 'en'
+[languages]
+  [languages.en]
+    weight = 1
+    languageName = "english"
+    contentDir = "content/en"
+  [languages.se]
+    weight = 2
+    languageName = "svenska"
+    contentDir = "content/se"
+```
+
+#### Translate 
+by filename
+- /content/about.en.md
+- /content/about.se.md
+
+or by directory
+- /content/en/about.md
+- /content/se/about.md
 
 ## Deployment
 

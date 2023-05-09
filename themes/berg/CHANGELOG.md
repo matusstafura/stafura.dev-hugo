@@ -2,10 +2,25 @@
 
 All the changes made to Berg theme for Hugo.
 
-## v0.6.0 - 2023-03-10
+## v0.6.2 - 2023-04-25
 
-- add param custom_css
-- add shortcode latest-posts-horizontal
+- feat: lang switcher in navbar
+- fix: tags url
+- fix: custom css link
+- feat: support multiple custom css
+- chore: dont show icon if no date in post
+- chore: support tags with spaces
+- allow shortcode latest-posts-horizontal without dates
+- chore: minor fix 
+- fix lang url; multilang
+
+## v0.6.1 - 2023-04-23
+
+- fix abs url lang; multilang support
+
+## v0.6.0 - 2023-04-22
+
+- edit navigation to support multilang
 
 ## v0.5.1 - 2023-02-25
 

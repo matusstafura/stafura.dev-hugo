@@ -1,6 +1,7 @@
 {{ $css := resources.Get "./css/styles.css" }}
-<link rel="stylesheet" href="{{ $css.RelPermalink | absURL }}" />
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" />
 
 {{ range .Site.Params.custom_css }}
-<link rel="stylesheet" href="{{ . | absURL }}" />
+    {{ $custom := resources.Get . }}
+    <link rel="stylesheet" href="{{ $custom.RelPermalink }}" />
 {{ end }}
