@@ -1,5 +1,9 @@
 body {
-  font-family: "JetBrains Mono", monospace;
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  font-size: 1rem;
 }
 
 @font-face {
@@ -7,5 +11,5 @@ body {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/fonts/JetBrainsMono-Regular.ttf") format("truetype");
+  src: url("/fonts/Inter-Regular.ttf") format("truetype");
 }
