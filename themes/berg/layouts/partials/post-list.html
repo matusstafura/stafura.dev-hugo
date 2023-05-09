@@ -1,23 +1,29 @@
 {{ $paginate := .Site.Params.Paginate | default 10 }}
 {{ $date_format := .Site.Params.Date_Format | default "Jan 2, 2006" }}
 {{ range (.Paginator $paginate).Pages }}
-  <section
-    class="p-8 shadow border dark:py-8 space-y-2 bg-white dark:bg-inherit">
-    <h2 class="m-0">
-        <a href="{{ .Permalink }}" class="text-2xl font-semibold tracking-wide hover:text-blue-400" > {{ .Title }} </a >
-    </h2>
-    <div class="text-sm">
-      <span class="flex mb-2 font-bold tracking-tight text-gray-500 dark:text-gray-300" >{{ .Params.Author }}</span >
-      {{ if .Site.Params.Posts.showDate }}
-        <span class="text-gray-500 text-md dark:text-gray-300" >{{ .Date.Format $date_format  }}</span >
+  <section class="p-8 shadow border dark:py-8 rounded-md my-4 space-y-2 bg-white dark:bg-inherit">
+    <div class="text-sm flex">
+      {{ if .Params.Author }}
+      <span class="flex mb-2 font-semibold tracking-tight text-gray-500 mr-4 dark:text-gray-300">{{ .Params.Author }}</span>
       {{ end }}
+      {{ if .Site.Params.Posts.showDate }}
+      <span class="text-gray-500 text-md dark:text-gray-300">{{ .Date.Format $date_format  }}</span >
+      {{ end }}
+    </div>
+    <h2 class="m-0">
+        <a href="{{ .Permalink }}" class="text-4xl font-semibold no-underline hover:text-blue-400" > {{ .Title }} </a >
+    </h2>
+    <div>
+        {{ range .Params.Tags }}
+            <a href="/tags/{{. | urlize}}" class="inline-block bg-gray-100 p-2 dark:bg-gray-600 no-underline space-x-3 py-1 text-xs hover:underline uppercase">{{ . }}</a>
+        {{ end }}
     </div>
     <div class="flex flex-row space-4 gap-x-4 items-center justify-between">
       {{ if .Params.featuredImage }}
-      <div class="w-1/4">
+      <div class="w-2/5">
         <a href="{{ .Permalink }}"><img src="{{ .Params.featuredImage }}" class="w-full bg-black" alt="{{ .Title }}" /></a>
       </div>
-      <div class="w-3/4">
+      <div class="w-3/5">
         <div class="text-gray-500 dark:text-gray-200">
         {{ .Params.Description }}
       </div>

@@ -23,6 +23,7 @@ tagmanager = "GTM-N8KF2Q3"
 
 [params.posts]
 showPrevNext = true
+showDate = true
 showTags = true
 
 [taxonomies]
