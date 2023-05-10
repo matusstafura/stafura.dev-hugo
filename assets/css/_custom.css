@@ -1,15 +1,45 @@
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "IBMPlexSans-Regular", sans-serif !important;
 }
 
-p {
-  font-size: 1rem;
+article > *{
+  font-size: 1.2rem !important;
+}
+
+h1 {
+  font-family: "IBMPlexSans-Bold", sans-serif !important;
+  font-size: 2.5rem !important;
+}
+
+h2 {
+  font-family: "IBMPlexSans-Medium", sans-serif !important;
+  font-size: 2rem !important;
+}
+
+strong {
+  font-family: "IBMPlexSans-SemiBoldItalic", sans-serif !important;
 }
 
 @font-face {
-  font-family: "JetBrains Mono";
-  font-style: normal;
-  font-weight: 400;
+  font-family: "IBMPlexSans-Regular";
   font-display: swap;
-  src: url("/fonts/Inter-Regular.ttf") format("truetype");
+  src: url("/fonts/IBMPlexSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IBMPlexSans-Bold";
+  font-display: swap;
+  src: url("/fonts/IBMPlexSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IBMPlexSans-Medium";
+  font-display: swap;
+  src: url("/fonts/IBMPlexSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IBMPlexSans-SemiBoldItalic";
+  font-display: swap;
+  src: url("/fonts/IBMPlexSans-SemiBoldItalic.ttf") format("truetype");
 }
