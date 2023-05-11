@@ -3,7 +3,7 @@ title: "About customers who can't reach you"
 description: "Increase the probability of sales by merely opening new doors to potential customers."
 tags: [ marketing, business, awareness ]
 date: "2023-01-09"
-image: /images/blog/octopus.webp
+image: /images/blog/octopus.jpg
 ---
 
 **_INTRODUCTION_**
@@ -11,7 +11,7 @@ image: /images/blog/octopus.webp
     Even if you have a worldwide, well-known company recognized by millions, there will always be a part of the population (potential customers) who are totally unaware of your existence. Increase the probability of sales by merely opening new doors to potential customers.
 Successful companies make sure that people know about them from every possible angle - you can see or hear (even smell) them everywhere in various forms. And don't allow yourself to be misled by the idea that just because your business operates online, you can be found by everyone.
 
-![octopus](/images/blog/octopus.webp)
+![octopus](/images/blog/octopus.jpg)
 
    At the beginning, you promote the business it a way that is easy, cheap, or familiar to you from experience; your default setup. As time goes by and customers keep flowing, your satisfaction is fulfilled, so you change your attention to other aspects of the business. Why would you keep looking for other ways to attract customers? So, you stick with your current setup, only improving it by changing some of its attributes and investing more money to multiply the results. However, this approach has a flaw; the world is too unpredictable to rely on a single channel. If it decreases significantly for some reason, you panic because everything depends on it. No customers means no sales, as the unwritten law of business says.
 

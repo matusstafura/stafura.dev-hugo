@@ -27,12 +27,9 @@ dev articles @ https://dev.to/matusstafura
 
 #### You can reach me:
 
-[![stafura github](/images/about/github.svg)](https://github.com/matustafura) 
-
-[![stafura twitter](/images/about/twitter.svg)](https://twitter.com/matusstafura)
-
-[![stafura linkedin](/images/about/linkedin.svg)](https://www.linkedin.com/in/matus-stafura/)
-
+[{{< figure src="/images/about/github.svg" alt="stafura github" >}}](https://github.com/matustafura)
+[{{< figure src="/images/about/twitter.svg" alt="stafura twitter" >}}](https://twitter.com/matusstafura)
+[{{< figure src="/images/about/linkedin.svg" alt="stafura linkedin" >}}](https://www.linkedin.com/in/matus-stafura/)
 
 #### Support:
 
