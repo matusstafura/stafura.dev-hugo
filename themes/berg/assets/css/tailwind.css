@@ -1,10 +1,21 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
 /* Font */
 body {
     font-family: "Roboto", sans-serif;
+}
+
+.prose a {
+    @apply text-primary-600 no-underline;
+}
+
+.prose a:hover {
+    @apply text-secondary-500;
+}
+
+.prose h2 {
+    font-size: 2rem;
 }
 
 @font-face {
@@ -53,4 +64,4 @@ p {
     @apply text-[1.05rem] leading-relaxed text-slate-700 antialiased dark:text-gray-100;
 }
 
- 
+@tailwind utilities;
