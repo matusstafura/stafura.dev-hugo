@@ -36,7 +36,7 @@ body {
 }
 
 .page-item {
-    @apply cursor-pointer rounded p-1 hover:bg-gray-800 dark:hover:bg-gray-700;
+    @apply cursor-pointer rounded p-1 hover:bg-primary-600 dark:hover:bg-gray-700;
 }
 
 .page-item a {
@@ -48,7 +48,7 @@ a.page-link {
 }
 
 .page-item.active {
-    @apply bg-gray-800 text-white dark:bg-gray-300 dark:text-gray-900;
+    @apply bg-primary-400 text-white dark:bg-gray-300 dark:text-gray-900;
 }
 
 .page-item.active a {
