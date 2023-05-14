@@ -1257,6 +1257,10 @@ p {
   border-bottom-width: 1px;
 }
 
+.border-r-2 {
+  border-right-width: 2px;
+}
+
 .border-slate-900\/10 {
   border-color: rgb(15 23 42 / 0.1);
 }

@@ -1,0 +1,13 @@
+<div class="grid grid-cols-1 gap-x-8 md:grid-cols-2 xl:grid-cols-3 my-4 py-4 gap-y-12 not-prose">
+    {{ range (where .Site.RegularPages "Type" "posts") | first 3 }}
+    <div class="rounded-xl space-y-4">
+        <div class="space-y-3">
+            <h3 class="font-bold text-xl hover:text-primary-500 dark:text-gray-200">
+                <a href="{{ .Permalink }}" title={{ .Title }}>{{ .Title }}</a>
+            </h3>
+        </div>
+        <p>{{ .Description }}</p>
+    </div>
+    {{ end }}
+</div>
+
