@@ -1,6 +1,6 @@
 ---
 title: "About me"
-description: "I’m a developer from Slovakia. I am passionate about open-source software, privacy, best practices, performance, idiomatic code, user and developer experience. I write articles about software development and marketing."
+description: "I’m a developer from Slovakia. I am passionate about programming, marketing, SEO."
 image: /images/about/og_about.jpg
 author: Matus Stafura
 ---

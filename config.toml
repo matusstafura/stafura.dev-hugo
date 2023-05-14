@@ -8,53 +8,53 @@ defaultContentLanguage = 'en'
 [markup.goldmark.renderer]
 
 [sitemap]
-changefreq = "monthly"
-filename = "sitemap.xml"
-priority = 0.5
+    changefreq = "monthly"
+    filename = "sitemap.xml"
+    priority = 0.5
 
 [params]
-date_format = "January 2, 2006"
-custom_css = ["css/_custom.css"]
-latestPostsCount = 9
-showDarkModeToggle = true
+    date_format = "January 2, 2006"
+    custom_css = ["css/_custom.css"]
+    latestPostsCount = 9
+    showDarkModeToggle = true
 
 [params.google]
-tagmanager = "GTM-N8KF2Q3"
+    tagmanager = "GTM-N8KF2Q3"
 
 [params.posts]
-showPrevNext = true
-showDate = true
-showTags = true
+    showPrevNext = true
+    showDate = true
+    showTags = true
 
 [taxonomies]
-tag = "tags"
+    tag = "tags"
 
 [[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
+    name = "Home"
+    url = "/"
+    weight = 1
 
 [[menu.main]]
-name = "Blog"
-url = "/posts"
-weight = 2
+    name = "Blog"
+    url = "/posts"
+    weight = 2
 
 [[menu.main]]
-name = "About"
-url = "/about"
-weight = 3
+    name = "About"
+    url = "/about"
+    weight = 3
 
 [[menu.main]]
-name = "GitHub"
-url = "https://github.com/matusstafura"
-weight = 4
+    name = "GitHub"
+    url = "https://github.com/matusstafura"
+    weight = 4
 
 [[menu.footer]]
-name = "Cookies"
-url = "/cookies"
-weight = 1
+    name = "Cookies"
+    url = "/cookies"
+    weight = 1
 
 [[menu.footer]]
-name = "Privacy Policy"
-url = "/privacy-policy"
-weight = 2
+    name = "Privacy Policy"
+    url = "/privacy-policy"
+    weight = 2

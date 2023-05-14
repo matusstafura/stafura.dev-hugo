@@ -1,6 +1,6 @@
 ---
 title: "Matus Stafura homepage"
-description: "Personal website of Matus Stafura"
+description: "Personal website"
 image: /images/home/og_home.jpg
 
 ### BLOCKS ###
@@ -20,8 +20,6 @@ horizontal_card:
       image: "images/home/tools.jpg"
       link: "https://tools-steel.vercel.app/"
 ---
-
-# Hi,
 
 here are my latest solo projects:
 
