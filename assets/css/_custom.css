@@ -16,6 +16,11 @@ h2 {
   font-size: 2rem !important;
 }
 
+h3 {
+  font-family: "IBMPlexSans-Bold", sans-serif !important;
+  font-size: 1.3rem !important;
+}
+
 strong {
   font-family: "IBMPlexSans-SemiBoldItalic", sans-serif !important;
 }

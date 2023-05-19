@@ -64,8 +64,23 @@
             </ul>
         </div>
     </div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+    {{ if or .Title .Description }}
     <div class="mx-auto max-w-4xl py-8">
-        <h1 class="text-5xl text-center pb-4 text-black font-extrabold">{{ .Title }}</h1>
+        {{ if .Title }}
+        <h1 class="text-5xl text-center pb-4 text-black dark:text-neutral-50 font-extrabold">{{ .Title }}</h1>
+        {{ end }}
+        {{ if .Description }}
         <p class="text-xl text-center text-black font-extrabold">{{ .Description }}</p>
+        {{ end }}
+    </div>
+    {{ end }}
+
+    <div class="mx-auto flex justify-start text-primary-500">
+    {{- partial "plugin/categories.html" . -}}
+    </div>
+    <div class="mx-auto flex justify-start text-primary-500">
+        {{- partial "plugin/tags.html" . -}}
+    </div>
     </div>
 </div>

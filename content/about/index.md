@@ -13,13 +13,7 @@ I'm a developer from Slovakia. I am passionate about open-source software, SEO, 
 
 I write articles about software development and marketing.
 
-I use: 
-- PHP,
-- Go,
-- Javascript/Typescript,
-- TailwindCSS, 
-- bash, 
-- neovim + tmux
+I mostly use: PHP, Go, Javascript/Typescript, TailwindCSS, bash, neovim + tmux.
 
 Interested in programming, SEO, writing.
 

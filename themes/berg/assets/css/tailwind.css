@@ -7,7 +7,35 @@ body {
 }
 
 .prose a {
-    @apply text-primary-600 no-underline;
+    @apply text-primary-600 no-underline dark:text-primary-400;
+}
+
+/* shortcode button start */
+#button {
+    @apply flex justify-center;
+}
+
+#button a {
+    @apply text-primary-50 bg-primary-500 hover:bg-primary-700 text-sm;
+}
+
+/* shortcode button end */
+
+#credits a {
+    @apply text-xs block text-primary-500;
+}
+
+a[target="_blank"]::after {
+  content: '\2750';
+  @apply ml-2;
+}
+
+article img {
+    @apply mx-auto rounded-lg;
+}
+
+figcaption {
+    @apply text-center text-sm;
 }
 
 .prose a:hover {
@@ -16,6 +44,7 @@ body {
 
 .prose h2 {
     font-size: 2rem;
+    @apply font-bold;
 }
 
 @font-face {
@@ -36,7 +65,7 @@ body {
 }
 
 .page-item {
-    @apply cursor-pointer rounded p-1 hover:bg-primary-600 dark:hover:bg-gray-700;
+    @apply cursor-pointer rounded p-1 hover:bg-gray-800 dark:hover:bg-gray-700;
 }
 
 .page-item a {
@@ -48,7 +77,7 @@ a.page-link {
 }
 
 .page-item.active {
-    @apply bg-primary-400 text-white dark:bg-gray-300 dark:text-gray-900;
+    @apply bg-gray-800 text-white dark:bg-gray-300 dark:text-gray-900;
 }
 
 .page-item.active a {

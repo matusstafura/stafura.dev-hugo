@@ -1,5 +1,6 @@
 ---
 title: "Know when to end a project"
+slug: 01-know-when-to-end-a-project
 description: "Failing to close a project when it should be or at all means that it still has some importance and continues to drain our resources."
 tags: [ business, marketing ]
 date: 2023-01-02

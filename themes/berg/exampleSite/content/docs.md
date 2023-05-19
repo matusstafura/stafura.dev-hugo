@@ -1,26 +1,14 @@
 ---
 title: "Docs"
 date: 2023-02-11T12:51:30+01:00
-draft: false
+toc: true
 ---
-
-## Contents
-
-- [Install Hugo](#install-hugo)
-- [Quick Start](#quick-start)
-- [First Post](#first-post)
-- [Menu](#menu)
-- [Settings](#settings)
-- [Shortcodes](#shortcodes)
-- [Languages](#languages)
-- [Deployment](#deployment)
-- [Development](#development)
 
 ## Install Hugo
 
 Install Hugo on macOS, Linux, Windows, BSD, and on any machine that can run the Go compiler tool chain.
 
-For full info visit official doc: [https://gohugo.io/installation/](https://gohugo.io/installation/)
+For full info visit official doc: {{< link url="https://gohugo.io/installation/" title="https://gohugo.io/installation/" >}}
 
 ## Quick Start
 
@@ -87,6 +75,37 @@ Example:
   url = "/privacy-policy/"
   weight = 1
 ```
+
+## Table Of Contents
+
+To generate a table of contents automatically in Hugo, you can follow these steps:
+
+1. Add front matter configuration: Explicitly add the following code to the front matter of your content file (e.g., Markdown file or Hugo archetype):
+
+```yaml
+---
+toc: true
+---
+```
+
+This configuration tells Hugo to generate a table of contents for that specific content file.
+
+2. Configure additional options: To further customize the table of contents generation, you can modify the `config.toml` file or the relevant configuration section in your Hugo project. Add the following code to the configuration:
+
+```toml
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+    ordered = false
+```
+
+The `startLevel` and `endLevel` settings define the range of headings to include in the table of contents. In this example, `startLevel = 2` means that headings starting from level 2 (e.g., `##`) will be included, and `endLevel = 3` means the table of contents will include headings up to level 3 (e.g., `###`). Adjust the values according to your specific requirements.
+
+The `ordered` option controls whether the table of contents will be ordered or unordered. Set it to `true` for an ordered list or `false` for an unordered list.
+
+By adding the front matter configuration and modifying the `config.toml` file, you can automatically generate a table of contents for your Hugo content files based on the specified heading levels.
+
 
 ## Settings
 
@@ -279,6 +298,35 @@ horizontal_card:
       link: "https://github.com/repo/repo"
       button: "Public repo here"
 ---
+```
+
+### Link
+
+Creates safe href nofollow link; opens in new window by default.
+Recommended for external links.
+
+```md
+{{</* link href="https://www.example.com/" title="source on wikipedia" */>}}
+```
+
+### FAQ Google Schema
+
+add to frontmatter
+
+```md
+---
+questions:
+  - question: "Question 1"
+    answer: "This is the answer to Question 1."
+  - question: "Question 2"
+    answer: "Here's the answer to Question 2."
+---
+```
+
+and then in markdown
+
+```md
+{{</* faq */>}}
 ```
 
 ## Languages

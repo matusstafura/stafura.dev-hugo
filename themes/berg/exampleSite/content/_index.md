@@ -1,18 +1,14 @@
 ---
 title: "Berg Hugo Theme"
 description: "Documentation for Berg - Hugo Theme"
+toc: true
 ---
 
-# Berg Hugo Theme
+## Introduction
 
 Berg theme is a clean and modern responsive blog theme for Hugo with TailwindCSS.
-See the _[demo](https://berg.stafura.dev/)_.
 
-## Contents
-
-- [Features](#features)
-- [Documentation](#documentation)
-- [License](#license)
+{{< button link="https://berg.stafura.dev/" text="Demo" target="_blank">}}
 
 ## Features
 
@@ -26,6 +22,8 @@ See the _[demo](https://berg.stafura.dev/)_.
 - OpenGraph, TwitterCard support
 - Darkmode
 - WebP Support
+- Auto Table Of Contents
+- Google FAQ Schema 
 
 ## Documentation
 

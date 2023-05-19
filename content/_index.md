@@ -3,27 +3,26 @@ title: "Matus Stafura homepage"
 description: "Personal website"
 image: /images/home/og_home.jpg
 
-### BLOCKS ###
 horizontal_card:
   enable: true
   feature_item:
     - title: "Berg Hugo Theme"
       description: "A clean and modern responsive blog theme for Hugo."
-      image: "images/home/berg.jpg"
+      image: "/images/home/berg.jpg"
       link: "https://berg.stafura.dev/"
     - title: "Components with TailwindCSS"
       description: "A collection of components built with TailwindCSS."
-      image: "images/home/tailcake.jpg"
+      image: "/images/home/tailcake.jpg"
       link: "https://tailcake.dev/"
     - title: "Webtools for everyday use"
       description: "A collection of webtools for everyday use."
-      image: "images/home/tools.jpg"
+      image: "/images/home/tools.jpg"
       link: "https://tools-steel.vercel.app/"
 ---
 
-here are my latest solo projects:
-
-{{< horizontal_card >}}
-
 ### Latest Posts:
 {{< latest-posts-horizontal >}}
+
+### Latest solo projects:
+{{< horizontal_card >}}
+
