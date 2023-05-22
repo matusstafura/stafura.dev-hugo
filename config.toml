@@ -25,6 +25,7 @@ defaultContentLanguage = 'en'
     showPrevNext = true
     showDate = true
     showTags = true
+    showCategories = true
 
 [taxonomies]
     tag = "tags"
