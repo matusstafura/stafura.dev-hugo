@@ -1,5 +1,5 @@
 <div class="bg-primary-500">
-    <div class="mx-auto p-4 flex max-w-4xl justify-between items-center w-full py-4">
+    <div class="mx-auto p-4 flex max-w-5xl justify-between items-center w-full py-4">
         {{ if .Site.Params.ShowLanguageSelector }}
         <div class="flex justify-end text-sm w-full space-x-2 mt-2">
             {{ range .Site.Languages }}
@@ -11,7 +11,7 @@
         <div class="flex items-center space-x-4">
             {{ if .Site.Params.logo }} 
                 <a href="{{ .Site.BaseURL }}"> 
-                    <img class="h-8" src="{{ .Site.Params.logo }}" alt="Logo">
+                    <img class="h-8" src="{{ .Site.Params.logo }}" alt="Logo" loading="lazy" decoding="async" />
                 </a>
             {{ end }}
             <a href="{{ .Site.BaseURL }}"> 
@@ -65,21 +65,29 @@
         </div>
     </div>
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-    <div class="mx-auto flex justify-center text-primary-50">
-        {{- partial "plugin/categories.html" . -}}
-    </div>
-    {{ if or .Title .Description }}
-    <div class="mx-auto max-w-2xl py-8">
-        {{ if .Title }}
-        <h1 class="text-5xl text-center pb-4 text-primary-50 font-extrabold">{{ .Title }}</h1>
+        {{ if .Params.icon }}
+        <div>
+            <img src="{{ .Params.icon }}" alt="{{ .Title }}" class="mx-auto h-16 w-auto" loading="lazy" decoding="async" />
+        </div>
         {{ end }}
-        {{ if .Description }}
-        <p class="text-xl text-center text-primary-50 font-extrabold">{{ .Description }}</p>
+        <div class="mx-auto flex justify-center text-primary-50">
+            {{- partial "plugin/categories.html" . -}}
+        </div>
+        {{ if or .Title .Description }}
+        <div class="mx-auto max-w-2xl py-8 space-y-2">
+            {{ if .Title }}
+            <h1 class="text-5xl text-center pb-4 text-primary-50 font-extrabold">{{ .Title }}</h1>
+            {{ end }}
+            {{ if .Description }}
+            <p class="text-xl text-center text-primary-50 font-extrabold">{{ .Description }}</p>
+            {{ end }}
+            {{ if .Params.showLastUpdate }}
+            <p class="text-sm text-center text-neutral-50">{{ i18n "last_update" }}: {{ .Lastmod.Format "2006-01-02" }}</p>
+            {{ end }}
+        </div>
         {{ end }}
-    </div>
-    {{ end }}
-    <div class="mx-auto flex justify-center text-primary-50">
-        {{- partial "plugin/tags.html" . -}}
-    </div>
+        <div class="mx-auto flex justify-center text-primary-50">
+            {{- partial "plugin/tags.html" . -}}
+        </div>
     </div>
 </div>
