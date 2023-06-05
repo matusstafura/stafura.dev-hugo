@@ -23,6 +23,7 @@ defaultContentLanguage = 'en'
     custom_css = ["css/_custom.css"]
     latestPostsCount = 9
     showDarkModeToggle = true
+    author = "Matus Stafura"
 
 [params.google]
     tagmanager = "GTM-N8KF2Q3"

@@ -1034,8 +1034,9 @@ figcaption {
   color: var(--color-secondary-500);
 }
 
-.prose h2 {
-  font-size: 2rem;
+h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   font-weight: 700;
 }
 
@@ -1162,6 +1163,14 @@ p {
 .toc ul {
   margin-left: -2rem;
   list-style-type: none;
+}
+
+.sidebar-right {
+  position: sticky;
+  top: 2.5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: 16rem;
 }
 
 .sr-only {
@@ -1328,10 +1337,6 @@ p {
 
 .items-center {
   align-items: center;
-}
-
-.justify-start {
-  justify-content: flex-start;
 }
 
 .justify-end {

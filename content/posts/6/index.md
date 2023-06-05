@@ -2,7 +2,7 @@
 title: "How to Write the Ultimate Online Article: Key Elements to Master"
 slug: how-to-write-online-article
 tags: [ writing, tips ]
-description: "A collection of tips to improve your article."
+description: "Master the art of online article writing with this comprehensive guide. Discover key elements like writing for humans, creating evergreen content, optimizing images, and more."
 date: 2023-05-21
 categories: ["SEO"]
 toc: true
@@ -140,7 +140,7 @@ When it comes to article writing, **prioritizing quality** over quantity is cruc
 
 What would you chose? A 10 times rewritten high-quality article or 10 average articles?
 
-Publishing poor content in the hopes of increasing your blog post count won't help you gain a loyal following or enhance your website's SEO value and ranking. 
+Publishing poor content in the hopes of increasing your blog post count won't help you gain a loyal following or enhance your website's {{< link title="SEO value and ranking" url="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" >}}. 
 
 Instead, aim to produce in-depth, well-researched content that will truly benefit your readers and keep them coming back for more. The quality of an article to which **YOU** would return.
 
