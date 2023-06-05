@@ -7,15 +7,17 @@ author: Matus Stafura
 
 ![avatar](/images/about/avatar.png)
 
-Hello, My name is **Matus Stafura**.
+Hello! I'm **Matus Stafura**, a developer, SEO specialist, and marketing strategist from Slovakia. 
 
-I'm a developer from Slovakia. I am passionate about open-source software, SEO, privacy, best practices, performance, idiomatic code, user and developer experience. 
+Over the years, I've assisted numerous websites in enhancing their Google rankings, boosting their traffic, and augmenting their brand awareness through effective marketing strategies. 
 
-I write articles about software development and marketing.
+My passion lies in open-source software, SEO, privacy, and best practices. I strive for performance, idiomatic code, and an optimal experience for both users and developers. 
 
-I mostly use: PHP, Go, Javascript/Typescript, TailwindCSS, bash, neovim + tmux.
+In addition to my work, I enjoy writing articles on software development and marketing, sharing my knowledge and insights with a wider audience.
 
-Interested in programming, SEO, writing.
+When it comes to programming, my tools of choice include PHP, Go, Javascript/Typescript, TailwindCSS, bash, neovim, and tmux.
+
+I have a keen interest in programming, SEO, and marketing, and I'm always eager to learn more and take on new challenges.
 
 dev articles @ https://dev.to/matusstafura
 
@@ -25,8 +27,3 @@ dev articles @ https://dev.to/matusstafura
 [{{< figure src="/images/about/twitter.svg" alt="stafura twitter" >}}](https://twitter.com/matusstafura)
 [{{< figure src="/images/about/linkedin.svg" alt="stafura linkedin" >}}](https://www.linkedin.com/in/matus-stafura/)
 
-#### Support:
-
-[![stafura patreon](/images/about/patreon.jpg)](https://www.patreon.com/bePatron?u=71479214)
-
-[![stafura buy me a coffee](/images/about/bmc.png)](https://www.buymeacoffee.com/matusstafura)
