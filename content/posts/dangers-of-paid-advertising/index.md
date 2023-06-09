@@ -1,6 +1,6 @@
 ---
 title: "The dangers of paid advertising"
-slug: 05-dangers-of-paid-advertising
+url: dangers-of-paid-advertising
 tags: [ marketing, business, awareness ]
 description: "Anybody inexperienced in making sales chooses the easiest (and most costly) way to promote - paid advertising. But, as time goes by, these ads are less and less effective."
 date: 2023-02-07

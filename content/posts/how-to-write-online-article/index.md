@@ -1,6 +1,6 @@
 ---
 title: "How to Write the Ultimate Online Article: Key Elements to Master"
-slug: how-to-write-online-article
+url: how-to-write-online-article
 tags: [ writing, tips ]
 description: "Master the art of online article writing with this comprehensive guide. Discover key elements like writing for humans, creating evergreen content, optimizing images, and more."
 date: 2023-05-21
@@ -9,6 +9,8 @@ toc: true
 ---
 
 Here are some tips to improve your article to attract audience, return readers, improve ranking and increase your reputation.
+
+![writing article](/images/blog/writing4.jpg)
 
 ## Write for Human Beings
 
@@ -121,6 +123,8 @@ Always provide links to reputable sources like research papers, news outlets, or
 Always use reliable, accurate, and relevant sources to your topic.
 
 ## Rewrite
+
+![writing article](/images/blog/writing2.jpg)
 
 To develop the **best content** possible and captivate your readers, be prepared to revisit and rewrite your articles. 
 

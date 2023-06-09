@@ -19,6 +19,7 @@ defaultContentLanguage = 'en'
     priority = 0.5
 
 [params]
+    # colorTheme = "blank"
     date_format = "January 2, 2006"
     custom_css = ["css/_custom.css"]
     latestPostsCount = 9
