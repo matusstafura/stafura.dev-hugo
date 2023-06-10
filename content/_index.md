@@ -21,7 +21,7 @@ horizontal_card:
 ---
 
 ### Latest Posts:
-{{< latest-posts-horizontal count="5" >}}
+{{< latest-posts-horizontal2 count="8" >}}
 
 ### Latest solo projects:
 {{< horizontal_card >}}

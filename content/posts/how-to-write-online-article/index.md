@@ -5,6 +5,7 @@ tags: [ writing, tips ]
 description: "Master the art of online article writing with this comprehensive guide. Discover key elements like writing for humans, creating evergreen content, optimizing images, and more."
 date: 2023-05-21
 categories: ["SEO"]
+featuredImage: /images/featured/typewriter_01.jpg
 toc: true
 ---
 
