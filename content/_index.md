@@ -12,13 +12,11 @@ horizontal_card:
 hideHeader: true
 ---
 
-Welcome to the personal website of Matus Stafura, a dedicated professional with a passion for SEO, digital marketing, and programming. 
-
-Here, you'll find a wealth of knowledge drawn from my experiences and insights in these fields. 
+Welcome to the personal website of Matus Stafura, a dedicated professional with a passion for programming and digital marketing. 
 
 ### Latest Posts:
 
-{{< latest-posts-horizontal2 count="2" >}}
+{{< latest-posts-horizontal1 >}}
 
 {{< button text="more articles" link="/posts/" >}}
 
