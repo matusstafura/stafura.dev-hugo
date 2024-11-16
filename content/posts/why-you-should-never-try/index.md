@@ -5,7 +5,7 @@ description: "Trying is hesitation. Anything but commiting tasks."
 tags:
   - business
   - awareness
-date: 2024-11-01
+date: 2024-11-11
 ---
 
 > Don't try. -- Charles Bukowski
