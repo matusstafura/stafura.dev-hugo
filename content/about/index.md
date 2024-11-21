@@ -21,9 +21,12 @@ I have a keen interest in programming, SEO, and marketing, and I'm always eager 
 
 dev articles @ https://dev.to/matusstafura
 
+{{< creedly badgeId="4a7e85f7-3141-475d-869b-477f2bdbe5b3" >}}
+
 #### You can reach me:
+ 
+- matus [at] stafura [dot] dev
 
 [{{< figure src="/images/about/github.svg" alt="stafura github" >}}](https://github.com/matustafura)
-[{{< figure src="/images/about/twitter.svg" alt="stafura twitter" >}}](https://twitter.com/matusstafura)
 [{{< figure src="/images/about/linkedin.svg" alt="stafura linkedin" >}}](https://www.linkedin.com/in/matus-stafura/)
 
