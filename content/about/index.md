@@ -28,6 +28,7 @@ dev articles @ https://dev.to/matusstafura
 - matus [at] stafura [dot] dev
 
 [{{< figure src="/images/about/github.svg" alt="stafura github" >}}](https://github.com/matustafura)
+[{{< figure src="/images/about/bluesky.png" alt="stafura bluesky" >}}](https://bsky.app/profile/stafura.bsky.social) 
 [{{< figure src="/images/about/linkedin.svg" alt="stafura linkedin" >}}](https://www.linkedin.com/in/matus-stafura/)
 
 {{< mailjet src="https://shwwi.mjt.lu/wgt/shwwi/x6sy/form?c=92be566b" >}}
