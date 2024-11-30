@@ -14,7 +14,7 @@ hideHeader: true
 
 ### Latest Posts:
 
-{{< latest-posts-horizontal1 >}}
+{{< latest-posts-horizontal1 count="5" >}}
 
 {{< button text="more articles" link="/posts/" >}}
 
