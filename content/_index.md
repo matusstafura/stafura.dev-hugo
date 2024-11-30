@@ -12,16 +12,9 @@ horizontal_card:
 hideHeader: true
 ---
 
-Welcome to the personal website of Matus Stafura, a dedicated professional with a passion for programming and digital marketing. 
-
 ### Latest Posts:
 
 {{< latest-posts-horizontal1 >}}
 
 {{< button text="more articles" link="/posts/" >}}
 
-### Latest solo projects:
-
-{{< horizontal_card >}}
-
-{{< button text="view portfolio" link="/portfolio/" >}}

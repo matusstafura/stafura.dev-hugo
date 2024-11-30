@@ -1,34 +1,33 @@
 ---
 title: "About me"
-description: "I’m a developer from Slovakia. I am passionate about programming, marketing, SEO."
 image: /images/about/og_about.jpg
-author: Matus Stafura
+author: "Matus Stafura"
 ---
+
+## About
 
 ![avatar](/images/about/avatar.png)
 
-Hello! I'm **Matus Stafura**, a developer, SEO specialist, and marketing strategist from Slovakia. 
+Hello! I'm a developer and strategist from Slovakia. Most of my time is spent at Megamix of which I'm the co-owner.
 
-Over the years, I've assisted numerous websites in enhancing their Google rankings, boosting their traffic, and augmenting their brand awareness through effective marketing strategies. 
+Over the past 15 years, I've helped numerous companies increase their traffic, optimize software, and improve programming, resulting in enhanced brand awareness and significant growth in revenue.
 
-My passion lies in open-source software, SEO, privacy, and best practices. I strive for performance, idiomatic code, and an optimal experience for both users and developers. 
+In addition to my work, I enjoy writing articles on software development and marketing on [https://dev.to/matusstafura](https://dev.to/matusstafura), sharing my knowledge and insights with a wider audience.
 
-In addition to my work, I enjoy writing articles on software development and marketing, sharing my knowledge and insights with a wider audience.
+When it comes to programming, my tools of choice include Ubuntu, PHP, Go, bash, neovim, and tmux.
 
-When it comes to programming, my tools of choice include PHP, Go, Javascript/Typescript, TailwindCSS, bash, neovim, and tmux.
-
-I have a keen interest in programming, SEO, and marketing, and I'm always eager to learn more and take on new challenges.
-
-dev articles @ https://dev.to/matusstafura
+## Certifications
 
 {{< creedly badgeId="4a7e85f7-3141-475d-869b-477f2bdbe5b3" >}}
 
-#### You can reach me:
+## Contact
  
 - matus [at] stafura [dot] dev
 
-[{{< figure src="/images/about/github.svg" alt="stafura github" >}}](https://github.com/matustafura)
-[{{< figure src="/images/about/bluesky.png" alt="stafura bluesky" >}}](https://bsky.app/profile/stafura.bsky.social) 
-[{{< figure src="/images/about/linkedin.svg" alt="stafura linkedin" >}}](https://www.linkedin.com/in/matus-stafura/)
+[![stafura github](/images/about/github.png)](https://github.com/matustafura)
+[![stafura bluesky](/images/about/bluesky.png)](https://bsky.app/profile/stafura.bsky.social)
+[![stafura linkedin](/images/about/linkedin.png)](https://www.linkedin.com/in/matus-stafura/)
+
+## Newsletter
 
 {{< mailjet src="https://shwwi.mjt.lu/wgt/shwwi/x6sy/form?c=92be566b" >}}

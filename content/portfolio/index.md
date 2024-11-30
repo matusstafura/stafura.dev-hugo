@@ -1,6 +1,5 @@
 ---
-title: "Matus Stafura homepage"
-description: "Personal website"
+title: "Portfolio"
 horizontal_card:
   enable: true
   feature_item:
