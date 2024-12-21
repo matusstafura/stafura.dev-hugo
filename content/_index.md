@@ -12,7 +12,7 @@ horizontal_card:
 hideHeader: true
 ---
 
-### Latest Posts:
+## Latest Posts
 
 {{< latest-posts-horizontal1 count="5" >}}
 
