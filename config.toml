@@ -3,75 +3,80 @@ languageCode = "en-us"
 title = "Matus Stafura"
 theme = "berg"
 enableRobotsTXT = true
-defaultContentLanguage = 'en'
+defaultContentLanguage = "en"
 
-[markup]
-  [markup.tableOfContents]
-    startLevel = 2
-    endLevel = 2
-    ordered = false
+[markup.highlight]
+codeFences = true
+lineNoStart = 1
+noClasses = true
+style = "rose-pine-moon"
 
-[markup.goldmark.renderer]
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 2
+ordered = false
+
+[markup.goldmark]
+renderer = { }
 
 [sitemap]
-    changefreq = "monthly"
-    filename = "sitemap.xml"
-    priority = 0.5
+changefreq = "monthly"
+filename = "sitemap.xml"
+priority = 0.5
 
 [pagination]
-    pagerSize = 100
+pagerSize = 100
 
 [params]
-    paginate = 5
-    # colorTheme = "blank"
-    date_format = "January 2, 2006"
-    custom_css = ["css/_custom.css"]
-    showDarkModeToggle = true
-    author = "Matus Stafura"
+paginate = 5
+date_format = "January 2, 2006"
+custom_css = [ "css/_custom.css" ]
+showDarkModeToggle = true
+author = "Matus Stafura"
 
-[params.plugins]
-    tagmanager = "GTM-N8KF2Q3"
+  [params.plugins]
+  tagmanager = "GTM-N8KF2Q3"
 
-[params.posts]
-    showPrevNext = true
-    showDate = true
-    showTags = true
-    showCategories = true
+  [params.posts]
+  showPrevNext = true
+  showDate = true
+  showTags = true
+  showCategories = true
 
 [taxonomies]
-    tag = "tags"
+tag = "tags"
 
 [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
+name = "Home"
+url = "/"
+weight = 1
 
 [[menu.main]]
-    name = "Blog"
-    url = "/posts"
-    weight = 2
+name = "Blog"
+url = "/posts"
+weight = 2
 
 [[menu.main]]
-    name = "Portfolio"
-    url = "/portfolio"
-    weight = 3
+name = "Portfolio"
+url = "/portfolio"
+weight = 3
 
 [[menu.main]]
-    name = "About me"
-    url = "/about"
-    weight = 4
+name = "About me"
+url = "/about"
+weight = 4
 
 [[menu.main]]
-    name = "GitHub"
-    url = "https://github.com/matusstafura"
-    weight = 5
+name = "GitHub"
+url = "https://github.com/matusstafura"
+weight = 5
 
 [[menu.footer]]
-    name = "Cookies"
-    url = "/cookies"
-    weight = 1
+name = "Cookies"
+url = "/cookies"
+weight = 1
 
 [[menu.footer]]
-    name = "Privacy Policy"
-    url = "/privacy-policy"
-    weight = 2
+name = "Privacy Policy"
+url = "/privacy-policy"
+weight = 2
