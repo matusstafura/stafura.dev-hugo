@@ -3,11 +3,11 @@ title: How to Install and Configure Redis on a Separate DigitalOcean Droplet for
 url: how-to-install-and-configure-redis-on-a-separate-digitalocean-droplet-for-magento
 description: Step-by-step guide to installing Redis on a separate DigitalOcean droplet for Magento. Learn how to improve performance, secure Redis with private networking, and configure it for seamless integration with your Magento store.
 tags:
-  - "#linux"
-  - "#ubuntu"
-  - "#redis"
-  - "#docs"
-  - "#magento"
+  - "linux"
+  - "ubuntu"
+  - "redis"
+  - "docs"
+  - "magento"
 date: 2025-01-23
 publishDate: 2025-01-23
 ---
