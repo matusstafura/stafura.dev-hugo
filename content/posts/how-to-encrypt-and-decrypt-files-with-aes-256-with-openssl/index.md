@@ -11,6 +11,7 @@ date: 2024-11-28
 The worst nightmare is sending and storing sensitive or private data in plain text.
 
 Let's improve that by encrypting the files with AES-256.
+
 ## Install OpenSSL
 
 ```bash

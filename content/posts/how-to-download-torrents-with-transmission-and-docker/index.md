@@ -9,7 +9,7 @@ tags:
 date: 2025-01-13
 publishDate: 2025-01-13
 ---
-Since I set up a new homelab, I wanted to separate processes that could run independently on another PC. One of those processes is downloading torrents, which previously required my PC to be running and consumed valuable space.
+Since I set up [my new homelab](/my-first-homelab/), I wanted to separate processes that could run independently on another PC. One of those processes is downloading torrents, which previously required my PC to be running and consumed valuable space.
 
 ### requirements
 
