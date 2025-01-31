@@ -8,6 +8,7 @@ tags:
   - tips
   - hobby
 date: 2025-01-30
+toc: true
 ---
 
 I recently purchased a Milwaukee pH600 pH meter for my microgreens project, and I want to share a quick and easy guide on how to calibrate it. Proper calibration ensures accurate readings, which are crucial for the health and growth of your microgreens.

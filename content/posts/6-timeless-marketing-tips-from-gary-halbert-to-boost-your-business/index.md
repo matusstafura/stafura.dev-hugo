@@ -7,6 +7,7 @@ tags:
   - business
   - awareness
 date: 2025-01-27
+toc: true
 ---
 Gary Halbert was one of the greatest copywriters, often called the "Prince of Print." His curiosity and hard work allowed him to accumulate invaluable knowledge about what truly works in marketing and sales.
 

@@ -9,7 +9,7 @@ tags:
   - "docs"
   - "magento"
 date: 2025-01-23
-publishDate: 2025-01-23
+toc: true
 ---
 
 Install redis on separate droplet to offload Redis from the Magento monolith. 

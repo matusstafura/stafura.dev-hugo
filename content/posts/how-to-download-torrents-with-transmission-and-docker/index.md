@@ -7,15 +7,16 @@ tags:
   - linux
   - homelab
 date: 2025-01-13
-publishDate: 2025-01-13
+toc: true
 ---
+
 Since I set up [my new homelab](/my-first-homelab/), I wanted to separate processes that could run independently on another PC. One of those processes is downloading torrents, which previously required my PC to be running and consumed valuable space.
 
-### requirements
+### Requirements
 
 - docker installed
 
-### installation
+### Installation
 
 Create a file named `docker-compose.yaml` and add the following content:
 
@@ -41,7 +42,7 @@ services:
 
 ```
 
-### running transmission
+### Running transmission
 
 While in the folder containing the `docker-compose.yaml` file, start the container. The volumes will be automatically created.
 
@@ -52,7 +53,7 @@ docker compose up -d transmission
 
 Now, simply add torrent files to the `watch` folder, and Transmission will automatically start downloading them.
 
-### settings
+### Settings
 
 To make changes, such as limiting the download bandwidth, edit the `settings.json` file in the `config` folder:
 
@@ -61,7 +62,7 @@ To make changes, such as limiting the download bandwidth, edit the `settings.jso
 "speed-limit-down-enabled": true,
 ```
 
-### adding magnet links
+### Adding magnet links
 
 To add magnet links, save the magnet link content into a file with a `.magnet` extension.
 
@@ -72,12 +73,14 @@ echo 'magnet:?xt=urn:btih:6ecfa6e78d4e63f190b9a29874b6853496432891&dn=archlinux-
 ```
 
 Place the file in the `watch` folder, and Transmission will handle the rest.
-### web ui
+
+### Web ui
 
 To access the web UI, open `http://localhost:9091` in your browser or use the IP address of your homelab. For example, mine is accessible at `http://192.168.0.152:9091`.
 
 ![](/images/blog/20250109193310.jpg)
-### resources
+
+### Resources
 
 For complete details about installation, setup, and additional features, refer to the official documentation:
 
