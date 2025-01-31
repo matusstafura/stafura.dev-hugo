@@ -2,9 +2,11 @@
 title: 
 url: {{ .Name }}
 description: ""
-date: {{ .Date }}
-featuredImage: 
-tags: []
+tags: 
+    - 
+    - 
+    -
 categories: []
 toc: true
+date: {{ .Date }}
 ---
