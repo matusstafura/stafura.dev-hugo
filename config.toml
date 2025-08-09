@@ -34,6 +34,7 @@ custom_css = [ "css/_custom.css" ]
 showDarkModeToggle = true
 author = "Matus Stafura"
 logo = "images/code.png"
+favicon = "images/favicon/favicon.ico"
 
   [params.plugins]
   tagmanager = "GTM-N8KF2Q3"
