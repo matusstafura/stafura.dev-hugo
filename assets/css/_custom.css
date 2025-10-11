@@ -48,3 +48,38 @@ strong {
   font-display: swap;
   src: url("/fonts/IBMPlexSans-SemiBoldItalic.ttf") format("truetype");
 }
+/* Code block container */
+.highlight {
+  border-radius: 8px;
+  background: #282b36;
+  padding: 1rem;
+  position: relative;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+/* Fake macOS terminal dots */
+.highlight::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 12px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ff5f56;
+  box-shadow: 16px 0 #ffbd2e, 32px 0 #27c93f;
+}
+
+/* Optional: add spacing for the dots */
+.highlight pre {
+  margin-top: 1.5rem;
+  padding: 0 11px;
+}
+
+/* Text styling */
+code {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.9rem;
+}
+

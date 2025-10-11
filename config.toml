@@ -9,7 +9,7 @@ defaultContentLanguage = "en"
 codeFences = true
 lineNoStart = 1
 noClasses = true
-style = "rose-pine-moon"
+style = "dracula"
 
 [markup.tableOfContents]
 startLevel = 2
