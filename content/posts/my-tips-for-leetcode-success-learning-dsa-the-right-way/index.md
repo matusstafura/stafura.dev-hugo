@@ -1,7 +1,7 @@
 ---
 title: "My Tips for LeetCode Success: Learning DSA the Right Way"
 url: /my-tips-for-leetcode-success-learning-dsa-the-right-way
-description: "Practical advice from solving 300+ problems: why understanding matters more than quantity, how to avoid common pitfalls, and what tools actually help you learn data structures and algorithms effectively."
+description: "Practical advice from solving 400+ problems: why understanding matters more than quantity, how to avoid common pitfalls, and what tools actually help you learn data structures and algorithms effectively."
 tags: 
     - dsa
     - programming
