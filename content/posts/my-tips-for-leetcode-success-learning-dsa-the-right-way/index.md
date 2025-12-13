@@ -11,7 +11,7 @@ toc: true
 date: 2025-11-15T10:31:29+01:00
 ---
 
-I have solved over 400 problems and this is mostly a personal reminder of tips and thoughts on solving DSA on Leetcode or any other alternative platform.
+I have solved over 500 problems and this is mostly a personal reminder of tips and thoughts on solving DSA on Leetcode or any other alternative platform.
 
 ## Main Goal
 

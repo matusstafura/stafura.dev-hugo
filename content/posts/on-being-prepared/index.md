@@ -1,6 +1,6 @@
 ---
 title: On being prepared
-url: slug
+url: "on-being-prepared"
 description: Clear goals and detailed planning help you stay focused, save time, and steer clear of uncertainty and chaos.
 tags:
   - business
