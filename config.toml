@@ -37,7 +37,7 @@ logo = "images/code.png"
 favicon = "images/favicon/favicon.ico"
 
   [params.plugins]
-  tagmanager = "GTM-N8KF2Q3"
+  # tagmanager = "GTM-XXXXXXX" via environment variable
 
   [params.posts]
   showPrevNext = true
