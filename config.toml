@@ -44,6 +44,7 @@ favicon = "images/favicon/favicon.ico"
   showDate = true
   showTags = true
   showCategories = true
+  showRewrittenDate = true
 
 [taxonomies]
 tag = "tags"
