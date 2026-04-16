@@ -17,7 +17,7 @@ endLevel = 3
 ordered = false
 
 [markup.goldmark]
-renderer = { }
+renderer = { unsafe = true }
 
 [sitemap]
 changefreq = "monthly"
