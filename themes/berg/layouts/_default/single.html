@@ -11,11 +11,6 @@
         {{ if .Site.Params.Posts.showDate }}
             {{ partial "plugin/date" . }}
         {{ end }}
-        <div class="text-xs text-slate-400">
-        {{ if .Site.Params.Posts.showRewrittenDate }}
-            updated：{{ partial "plugin/rewritten_date" . }}
-        {{ end }}
-        </div>
     </div>
     {{ end }}
 </div>

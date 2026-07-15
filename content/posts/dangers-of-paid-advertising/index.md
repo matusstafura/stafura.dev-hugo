@@ -4,7 +4,6 @@ url: dangers-of-paid-advertising
 tags: [ marketing, business, awareness ]
 description: "Anybody inexperienced in making sales chooses the easiest (and most costly) way to promote - paid advertising. But, as time goes by, these ads are less and less effective."
 date: 2023-02-07
-featuredImage: /images/featured/ad.jpg
 ---
 
 Guessing is expensive. A lot.
@@ -33,7 +32,6 @@ Additionally, it can be used to promote your business by focusing on brand promo
 Remember: make sure you gather data and interpret it correctly, otherwise it is gambling. Ads are not meant to entertain.
 
 ~
-
 
 Your immediate goal may be to make a sale, but your long-term objective is to build a sustainable company. ***The future of the company is built on returning customers***, which can be achieved through branding rather than advertising. Ideally, customers should come from recommendations. Spending a lot of money on ads can indicate that there are issues with the product or service that need to be addressed, as customers are not being convinced or satisfied. This can result in a forced purchase, rather than a genuine one.
 
