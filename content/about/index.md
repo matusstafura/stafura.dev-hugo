@@ -24,7 +24,7 @@ When it comes to programming, my tools of choice include Ubuntu, PHP, Go, bash, 
  
 - matus [at] stafura [dot] dev
 
-[![stafura github](/images/about/github.png)](https://github.com/matustafura)
+[![stafura github](/images/about/github.png)](https://github.com/matusstafura)
 [![stafura bluesky](/images/about/bluesky.png)](https://bsky.app/profile/stafura.bsky.social)
 [![stafura linkedin](/images/about/linkedin.png)](https://www.linkedin.com/in/matus-stafura/)
 

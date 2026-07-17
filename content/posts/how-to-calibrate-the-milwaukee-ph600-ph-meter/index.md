@@ -9,6 +9,8 @@ tags:
   - hobby
 date: 2025-01-30
 toc: true
+featuredImage: /how-to-calibrate-the-milwaukee-ph600-ph-meter/ph600-calibration-1.jpg
+images: ["/how-to-calibrate-the-milwaukee-ph600-ph-meter/ph600-calibration-1.jpg"]
 ---
 
 I recently purchased a Milwaukee pH600 pH meter for my microgreens project, and I want to share a quick and easy guide on how to calibrate it. Proper calibration ensures accurate readings, which are crucial for the health and growth of your microgreens.

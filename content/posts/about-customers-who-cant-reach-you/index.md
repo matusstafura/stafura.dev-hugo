@@ -5,6 +5,7 @@ description: "Increase the probability of sales by merely opening new doors to p
 tags: [ marketing, business, awareness ]
 date: "2023-01-09"
 featuredImage: /images/featured/about-customers-who-cant-reach-you.jpg
+images: ["/images/featured/about-customers-who-cant-reach-you.jpg"]
 ---
 
 **_INTRODUCTION_**

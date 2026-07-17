@@ -5,6 +5,7 @@ description: "Increase the chance of success, not only by proper planning but al
 tags: [ business ]
 date: "2023-01-16"
 featuredImage: /images/featured/retail.jpg
+images: ["/images/featured/retail.jpg"]
 ---
 
 Every business craves more sales. By looking for more customers, collaborating with new distributors, and adding fresh products or services to their portfolio. However, every action taken poses a risk and the potential to make things worse. Poorly thought out decisions or being blinded by the desire for profit can lead to ignoring or tolerating negative consequences. Increase the chance of success, not only by proper planning but also by avoiding making mistakes.

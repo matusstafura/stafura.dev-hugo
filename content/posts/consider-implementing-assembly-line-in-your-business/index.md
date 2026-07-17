@@ -5,6 +5,7 @@ description: "When the company starts, it usually has one or two people who take
 tags: [ business, marketing ]
 date: 2023-01-23
 featuredImage: /images/featured/business.jpg
+images: ["/images/featured/business.jpg"]
 ---
 
 In the early 20th century, it took several weeks or months to produce a single car by hand. Workers performed multiple tasks that were dependent on each other, and the production of the parts of the vehicle was often of inconsistent quality. They also had to share the same space, often colliding while moving parts in a single room or performing individual tasks. Everyone could do anything, but little was accomplished on a daily basis. The process was terribly slow.

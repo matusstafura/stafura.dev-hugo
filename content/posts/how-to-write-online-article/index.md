@@ -6,6 +6,7 @@ description: "Master the art of online article writing with this comprehensive g
 date: 2023-05-21
 categories: ["SEO"]
 featuredImage: /images/featured/typewriter_01.jpg
+images: ["/images/featured/typewriter_01.jpg"]
 toc: true
 ---
 

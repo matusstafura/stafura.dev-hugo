@@ -35,6 +35,8 @@ showDarkModeToggle = true
 author = "Matus Stafura"
 logo = "images/code.png"
 favicon = "images/favicon/favicon.ico"
+description = "Matus Stafura writes about SEO, marketing, and programming."
+images = ["/images/home/og_home.jpg"]
 
   [params.plugins]
   # tagmanager = "GTM-XXXXXXX" via environment variable
@@ -48,6 +50,7 @@ favicon = "images/favicon/favicon.ico"
 
 [taxonomies]
 tag = "tags"
+category = "categories"
 
 [[menu.main]]
 name = "Home"

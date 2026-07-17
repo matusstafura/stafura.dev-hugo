@@ -1,6 +1,6 @@
 ---
 title: Limiting resources with ulimit in Linux
-url: title-limiting-resources-with-ulimit-in-linux
+url: limiting-processes-with-ulimit-in-linux
 description: How to use the ulimit command in Linux to manage system resources
 tags:
   - linux
