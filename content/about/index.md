@@ -28,6 +28,6 @@ When it comes to programming, my tools of choice include Ubuntu, PHP, Go, bash, 
 [![stafura bluesky](/images/about/bluesky.png)](https://bsky.app/profile/stafura.bsky.social)
 [![stafura linkedin](/images/about/linkedin.png)](https://www.linkedin.com/in/matus-stafura/)
 
-## Newsletter
+<!-- ## Newsletter -->
 
-{{< mailjet src="https://shwwi.mjt.lu/wgt/shwwi/x6sy/form?c=92be566b" >}}
+<!-- {{< mailjet src="https://shwwi.mjt.lu/wgt/shwwi/x6sy/form?c=92be566b" >}} -->
