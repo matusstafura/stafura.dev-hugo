@@ -6,7 +6,7 @@ author: "Matus Stafura"
 
 ## About
 
-![avatar](/images/about/avatar.png)
+![avatar](/images/profile.jpg)
 
 Hello! I'm a developer and strategist from Slovakia. Most of my time is spent at Megamix of which I'm the co-owner.
 

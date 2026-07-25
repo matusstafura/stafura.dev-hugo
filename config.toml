@@ -88,3 +88,33 @@ weight = 1
 name = "Privacy Policy"
 url = "/privacy-policy"
 weight = 2
+
+[params.person]
+  name = "Matus Stafura"
+  jobTitle = "Developer & E-commerce Entrepreneur"
+  company = "Megamix s.r.o."
+  image = "/images/profile.jpg"
+
+  languages = [
+    "Slovak",
+    "English",
+    "German",
+    "Swedish",
+  ]
+
+  skills = [
+    "PHP",
+    "Go",
+    "Python",
+    "Laravel",
+    "Magento 2",
+    "E-commerce",
+    "SEO"
+  ]
+
+  sameAs = [
+    "https://github.com/matusstafura",
+    "https://www.linkedin.com/in/matus-stafura",
+    "https://dev.to/matusstafura",
+  ]
+
