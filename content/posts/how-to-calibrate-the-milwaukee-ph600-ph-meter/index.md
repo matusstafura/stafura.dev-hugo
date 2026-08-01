@@ -26,13 +26,13 @@ What you'll need:
 2. Remove the protective cap.
 3. Immerse the electrode in the pH 7.01 calibration solution (MA9007) and wait for the reading to stabilize.
 
-![ph600-calibration-1.jpg](/images/blog/how-to-calibrate-the-milwaukee-ph600-ph-meter/ph600-calibration-1.jpg)
+![Milwaukee pH600 meter display reading 6.9 while immersed in pH 7.01 calibration solution](/images/blog/how-to-calibrate-the-milwaukee-ph600-ph-meter/ph600-calibration-1.jpg)
 
 In my case, the meter initially displayed 6.9.
 
 4. Adjust the trimmer on the back of the device using a screwdriver until the display shows "7.0".
 
-![ph600-calibration-2.jpg](/images/blog/how-to-calibrate-the-milwaukee-ph600-ph-meter/ph600-calibration-2.jpg)
+![Milwaukee pH600 meter display reading 7.0 after trimmer calibration adjustment](/images/blog/how-to-calibrate-the-milwaukee-ph600-ph-meter/ph600-calibration-2.jpg)
 
 And that’s it! Your pH meter is now calibrated and ready to use.
 

@@ -1,6 +1,7 @@
 ---
 title: "Evergreen Content"
 url: evergreen-content
+description: What evergreen content is, why it outperforms trend-driven posts long-term, and how to write it.
 date: 2023-05-31T08:56:10+02:00
 draft: true
 ---

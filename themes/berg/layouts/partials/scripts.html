@@ -9,4 +9,4 @@
 {{- end }}
 
 {{- $bundleJS := $assets.Get "js" | resources.Concat "js/main.bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
-<script src="{{ $bundleJS.RelPermalink }}"></script>
+<script src="{{ $bundleJS.RelPermalink }}" defer></script>

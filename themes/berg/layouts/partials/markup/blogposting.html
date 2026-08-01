@@ -1,28 +1,31 @@
+{{- $image := .Site.Params.logo | absURL }}
+{{- with .Params.images }}{{ $image = index . 0 | absURL }}
+{{- else }}{{ with .Params.featuredImage }}{{ $image = . | absURL }}{{ end }}
+{{- end }}
 <script type="application/ld+json">
 {
   "@context": "http://schema.org",
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "{{ .Permalink }}"
+    "@id": {{ .Permalink | jsonify }}
   },
-  "headline": "{{ .Title }}",
-  "image": "{{ with .Params.images }}{{ index . 0 | absURL }}{{ else }}{{ with .Params.featuredImage }}{{ . | absURL }}{{ else }}{{ .Site.Params.logo | absURL }}{{ end }}{{ end }}",
+  "headline": {{ .Title | jsonify }},
+  "image": {{ $image | jsonify }},
   "author": {
     "@type": "Person",
-    "name": "{{ .Site.Params.author }}"
+    "name": {{ .Site.Params.author | jsonify }}
   },
   "publisher": {
     "@type": "Organization",
-    "name": "{{ .Site.Title }}",
+    "name": {{ .Site.Title | jsonify }},
     "logo": {
       "@type": "ImageObject",
-      "url": "{{ .Site.Params.logo | absURL }}"
+      "url": {{ .Site.Params.logo | absURL | jsonify }}
     }
   },
-  "datePublished": "{{ .Date.Format "2006-01-02" }}",
-  "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
-  "description": "{{ .Description }}"
+  "datePublished": {{ .Date.Format "2006-01-02" | jsonify }},
+  "dateModified": {{ .Lastmod.Format "2006-01-02" | jsonify }},
+  "description": {{ .Description | jsonify }}
 }
 </script>
-

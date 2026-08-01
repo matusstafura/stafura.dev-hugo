@@ -2,22 +2,16 @@
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "name": "{{ .Site.Params.person.name }}",
-  "url": "{{ .Site.BaseURL }}",
-  "image": "{{ .Site.BaseURL }}{{ .Site.Params.person.image }}",
-  "jobTitle": "{{ .Site.Params.person.jobTitle }}",
+  "name": {{ .Site.Params.person.name | jsonify }},
+  "url": {{ .Site.BaseURL | jsonify }},
+  "image": {{ printf "%s%s" .Site.BaseURL .Site.Params.person.image | jsonify }},
+  "jobTitle": {{ .Site.Params.person.jobTitle | jsonify }},
   "worksFor": {
     "@type": "Organization",
-    "name": "{{ .Site.Params.person.company }}"
+    "name": {{ .Site.Params.person.company | jsonify }}
   },
-  "knowsLanguage": [
-    {{ range $i, $lang := .Site.Params.person.languages }}{{ if $i }},{{ end }}"{{ $lang }}"{{ end }}
-  ],
-  "knowsAbout": [
-    {{ range $i, $skill := .Site.Params.person.skills }}{{ if $i }},{{ end }}"{{ $skill }}"{{ end }}
-  ],
-  "sameAs": [
-    {{ range $i, $profile := .Site.Params.person.sameAs }}{{ if $i }},{{ end }}"{{ $profile }}"{{ end }}
-  ]
+  "knowsLanguage": {{ .Site.Params.person.languages | jsonify }},
+  "knowsAbout": {{ .Site.Params.person.skills | jsonify }},
+  "sameAs": {{ .Site.Params.person.sameAs | jsonify }}
 }
 </script>

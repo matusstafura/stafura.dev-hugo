@@ -15,6 +15,9 @@
 {{ end -}}
 {{ template "_internal/opengraph.html" . }}
 {{- template "_internal/twitter_cards.html" . }}
+{{- range .AlternativeOutputFormats }}
+<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}" title="{{ $.Site.Title }}">
+{{- end }}
 {{- partial "head/seo.html" . -}}
 {{- partial "head/link.html" . -}}
 {{- partial "faq.html" . -}}

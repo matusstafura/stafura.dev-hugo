@@ -1,20 +1,31 @@
 {{ if .Site.Params.breadcrumbs }}
+{{- $url := replace .Parent.Permalink (printf "%s" site.BaseURL) "" }}
+{{- $lang_url := strings.TrimPrefix (printf "%s/" .Lang) $url -}}
+
+{{- $items := slice (dict "@type" "ListItem" "position" 1 "name" (i18n "home" | default "Home") "item" (absLangURL "")) }}
+{{- $scratch := newScratch }}
+{{- range $index, $element := split $lang_url "/" }}
+{{- $scratch.Add "path" (printf "%s/" $element) }}
+{{- $bc_pg := site.GetPage ($scratch.Get "path") }}
+{{- if (and ($bc_pg) (gt (len .) 0)) }}
+{{- $items = $items | append (dict "@type" "ListItem" "position" (add (len $items) 1) "name" $bc_pg.Name "item" $bc_pg.Permalink) }}
+{{- end }}
+{{- end }}
+
 <div class="breadcrumbs">
-
-    {{- $url := replace .Parent.Permalink (printf "%s" site.BaseURL) "" }}
-    {{- $lang_url := strings.TrimPrefix (printf "%s/" .Lang) $url -}}
-
     <a href="{{ "" | absLangURL }}">{{ i18n "home" | default "Home" }}</a>
-    {{- $scratch := newScratch }}
-    {{- range $index, $element := split $lang_url "/" }}
-
-    {{- $scratch.Add "path" (printf "%s/" $element )}}
-    {{- $bc_pg := site.GetPage ($scratch.Get "path") -}}
-
-    {{- if (and ($bc_pg) (gt (len . ) 0))}}
-    {{- print "&nbsp;»&nbsp;" | safeHTML -}}<a href="{{ $bc_pg.Permalink }}">{{ $bc_pg.Name }}</a>
+    {{- range $items }}
+    {{- if gt .position 1 }}
+    {{- print "&nbsp;»&nbsp;" | safeHTML -}}<a href="{{ .item }}">{{ .name }}</a>
     {{- end }}
-
-    {{- end -}}
+    {{- end }}
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": {{ $items | jsonify }}
+}
+</script>
 {{ end }}
