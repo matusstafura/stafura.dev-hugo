@@ -83,3 +83,71 @@ code {
   font-size: 0.9rem;
 }
 
+#cookie-consent-banner {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 9999;
+  background: #1f2430;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.95rem;
+}
+#cookie-consent-banner a { color: #8ab4f8; text-decoration: underline; }
+.cookie-consent-actions { display: flex; gap: 0.5rem; }
+.cookie-consent-actions button {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.cookie-consent-actions button[data-action="accept"] {
+  background: #fff;
+  color: #1f2430;
+}
+#cookie-consent-banner,
+#cookie-consent-banner p {
+  color: #fff !important;
+}
+
+#cookie-consent-banner a {
+  color: #8ab4f8 !important;
+  text-decoration: underline;
+}
+
+/* safety net: no image inside article content should ever overflow */
+article img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-avatar {
+  display: block;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1.5rem;
+}
+
+.about-social {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.about-social img {
+  height: 24px;
+  opacity: 0.75;
+  transition: opacity 0.15s ease;
+}
+
+.about-social img:hover {
+  opacity: 1;
+}

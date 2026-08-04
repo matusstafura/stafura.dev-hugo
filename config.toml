@@ -31,6 +31,7 @@ pagerSize = 100
 paginate = 5
 date_format = "January 2, 2006"
 custom_css = [ "css/_custom.css" ]
+custom_js = [ "js/_custom.js" ]
 showDarkModeToggle = true
 author = "Matus Stafura"
 logo = "images/code.png"

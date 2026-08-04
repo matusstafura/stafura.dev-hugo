@@ -1,0 +1,4 @@
+{{- $gtmID := getenv "HUGO_GTM_ID" | default .Site.Params.plugins.tagmanager -}}
+{{- if $gtmID -}}
+<script>window.__GTM_ID = "{{ $gtmID }}";</script>
+{{- end -}}

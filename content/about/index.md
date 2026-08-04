@@ -6,7 +6,7 @@ author: "Matus Stafura"
 
 ## About
 
-![avatar](/images/profile.jpg)
+<img src="/images/profile.jpg" alt="Matus Stafura" class="about-avatar">
 
 Hello! I'm a developer and strategist from Slovakia. Most of my time is spent at Megamix of which I'm the co-owner.
 
@@ -16,18 +16,17 @@ In addition to my work, I enjoy writing articles on software development and mar
 
 When it comes to programming, my tools of choice include Ubuntu, PHP, Go, bash, neovim, and tmux.
 
+## Contact
+
+- matus [at] stafura [dot] dev
+
+<div class="about-social">
+  <a href="https://github.com/matusstafura" aria-label="GitHub"><img src="/images/about/github.png" alt="GitHub"></a>
+  <a href="https://bsky.app/profile/stafura.bsky.social" aria-label="Bluesky"><img src="/images/about/bluesky.png" alt="Bluesky"></a>
+  <a href="https://www.linkedin.com/in/matus-stafura/" aria-label="LinkedIn"><img src="/images/about/linkedin.png" alt="LinkedIn"></a>
+</div>
+
 ## Certifications
 
 {{< creedly badgeId="4a7e85f7-3141-475d-869b-477f2bdbe5b3" >}}
 
-## Contact
- 
-- matus [at] stafura [dot] dev
-
-[![stafura github](/images/about/github.png)](https://github.com/matusstafura)
-[![stafura bluesky](/images/about/bluesky.png)](https://bsky.app/profile/stafura.bsky.social)
-[![stafura linkedin](/images/about/linkedin.png)](https://www.linkedin.com/in/matus-stafura/)
-
-<!-- ## Newsletter -->
-
-<!-- {{< mailjet src="https://shwwi.mjt.lu/wgt/shwwi/x6sy/form?c=92be566b" >}} -->
