@@ -4,7 +4,6 @@ url: why-would-you-make-your-life-hard
 description: "Increase the chance of success, not only by proper planning but also by avoiding making mistakes."
 tags: [ business ]
 date: "2023-01-16"
-featuredImage: /images/featured/retail.jpg
 images: ["/images/featured/retail.jpg"]
 ---
 

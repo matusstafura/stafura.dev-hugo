@@ -9,7 +9,6 @@ tags:
   - hobby
 date: 2025-01-30
 toc: true
-featuredImage: /how-to-calibrate-the-milwaukee-ph600-ph-meter/ph600-calibration-1.jpg
 images: ["/how-to-calibrate-the-milwaukee-ph600-ph-meter/ph600-calibration-1.jpg"]
 ---
 

@@ -4,7 +4,6 @@ url: about-customers-who-cant-reach-you
 description: "Increase the probability of sales by merely opening new doors to potential customers."
 tags: [ marketing, business, awareness ]
 date: "2023-01-09"
-featuredImage: /images/featured/about-customers-who-cant-reach-you.jpg
 images: ["/images/featured/about-customers-who-cant-reach-you.jpg"]
 ---
 

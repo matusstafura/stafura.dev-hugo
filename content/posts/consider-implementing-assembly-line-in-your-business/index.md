@@ -4,7 +4,6 @@ url: consider-implementing-assembly-line-in-your-business
 description: "When the company starts, it usually has one or two people who take care of everything. Having the employees performing multiple tasks is inneficient."
 tags: [ business, marketing ]
 date: 2023-01-23
-featuredImage: /images/featured/business.jpg
 images: ["/images/featured/business.jpg"]
 ---
 
