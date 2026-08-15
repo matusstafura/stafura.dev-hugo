@@ -24,4 +24,7 @@
 {{ if eq .Type "posts" }}
 {{- partial "markup/blogposting.html" . -}}
 {{ end -}}
+{{ if hugo.IsProduction }}
+{{ partial "umami.html" . }}
+{{ end }}
 </head>
