@@ -1,28 +1,33 @@
+/* Font overrides below are scoped with `.prose` (rather than using
+   !important) so they win on CSS specificity against Tailwind
+   Typography's own heading/paragraph rules — same result, without
+   needing !important to force the cascade. `body` doesn't need this
+   scoping: nothing else in the site sets a competing font-family. */
 body {
-  font-family: "IBMPlexSans-Regular", sans-serif !important;
+  font-family: "IBMPlexSans-Regular", sans-serif;
 }
 
-article > *{
-  font-size: 1.2rem !important;
+.prose article > * {
+  font-size: 1.2rem;
 }
 
-h1 {
-  font-family: "IBMPlexSans-Bold", sans-serif !important;
-  font-size: 2.5rem !important;
+.prose h1 {
+  font-family: "IBMPlexSans-Bold", sans-serif;
+  font-size: 2.5rem;
 }
 
-h2 {
-  font-family: "IBMPlexSans-Medium", sans-serif !important;
-  font-size: 2rem !important;
+.prose h2 {
+  font-family: "IBMPlexSans-Medium", sans-serif;
+  font-size: 2rem;
 }
 
-h3 {
-  font-family: "IBMPlexSans-Bold", sans-serif !important;
-  font-size: 1.3rem !important;
+.prose h3 {
+  font-family: "IBMPlexSans-Bold", sans-serif;
+  font-size: 1.3rem;
 }
 
-strong {
-  font-family: "IBMPlexSans-SemiBoldItalic", sans-serif !important;
+.prose strong {
+  font-family: "IBMPlexSans-SemiBoldItalic", sans-serif;
 }
 
 @font-face {
@@ -111,15 +116,6 @@ code {
   background: #fff;
   color: #1f2430;
 }
-#cookie-consent-banner,
-#cookie-consent-banner p {
-  color: #fff !important;
-}
-
-#cookie-consent-banner a {
-  color: #8ab4f8 !important;
-  text-decoration: underline;
-}
 
 /* safety net: no image inside article content should ever overflow */
 article img {
@@ -150,4 +146,97 @@ article img {
 
 .about-social img:hover {
   opacity: 1;
+}
+
+/* Language dropdown (native <details>/<summary> — no JS required to
+   open/close, works with keyboard and screen readers out of the box).
+   Written as plain CSS rather than Tailwind utility classes, since
+   this file isn't subject to Tailwind's build-time class purging. */
+.lang-dropdown {
+  position: relative;
+}
+
+.lang-dropdown summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 0.3rem 0.85rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  color: #334155; /* slate-700 */
+  user-select: none;
+}
+
+.lang-dropdown summary::-webkit-details-marker,
+.lang-dropdown summary::marker {
+  display: none;
+  content: "";
+}
+
+.lang-dropdown summary::after {
+  content: "▾";
+  margin-left: 0.4rem;
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+
+.lang-dropdown summary:hover,
+.lang-dropdown[open] summary {
+  color: #3b82f6; /* primary-500 */
+}
+
+.dark .lang-dropdown summary {
+  color: #e2e8f0; /* slate-200 */
+}
+
+.dark .lang-dropdown summary:hover,
+.dark .lang-dropdown[open] summary {
+  color: #60a5fa; /* primary-400 */
+}
+
+.lang-dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  margin-top: 0.3rem;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  min-width: 140px;
+  z-index: 50;
+  overflow: hidden;
+}
+
+.dark .lang-dropdown-menu {
+  background: #1f2937; /* gray-800, matches the card background */
+  border-color: #374151;
+}
+
+.lang-dropdown-menu a {
+  display: block;
+  padding: 0.55rem 0.9rem;
+  font-size: 0.875rem;
+  color: #334155;
+  text-decoration: none;
+}
+
+.lang-dropdown-menu a:hover {
+  background: #f1f5f9;
+}
+
+.dark .lang-dropdown-menu a {
+  color: #e2e8f0;
+}
+
+.dark .lang-dropdown-menu a:hover {
+  background: #374151;
+}
+
+.lang-dropdown-menu a.active {
+  font-weight: 700;
+  color: #000;
+}
+
+.dark .lang-dropdown-menu a.active {
+  color: #fafafa;
 }

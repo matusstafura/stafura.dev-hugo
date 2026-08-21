@@ -17,15 +17,33 @@
   }
 
   function showBanner() {
+    var lang = document.documentElement.lang === "de" ? "de" : "en";
+    var text = {
+      en: {
+        message: 'This site uses cookies for analytics. Read the <a href="https://stafura.dev/cookies/">cookie policy</a>.',
+        reject: "Reject",
+        accept: "Accept"
+      },
+      de: {
+        // The linked policy page itself is English-only for now (a legal
+        // document — machine translation isn't used for it without
+        // review), so this points to the canonical English URL even on
+        // the German site rather than a page that doesn't exist.
+        message: 'Diese Website verwendet Cookies für Analysezwecke. Lies die <a href="https://stafura.dev/cookies/">Cookie-Richtlinie</a> (auf Englisch).',
+        reject: "Ablehnen",
+        accept: "Annehmen"
+      }
+    }[lang];
+
     var banner = document.createElement("div");
     banner.id = "cookie-consent-banner";
     banner.setAttribute("role", "dialog");
     banner.setAttribute("aria-label", "Cookie consent");
     banner.innerHTML =
-      '<p>This site uses cookies for analytics. Read the <a href="/cookies">cookie policy</a>.</p>' +
+      "<p>" + text.message + "</p>" +
       '<div class="cookie-consent-actions">' +
-      '<button type="button" data-action="reject">Reject</button>' +
-      '<button type="button" data-action="accept">Accept</button>' +
+      '<button type="button" data-action="reject">' + text.reject + "</button>" +
+      '<button type="button" data-action="accept">' + text.accept + "</button>" +
       "</div>";
     document.body.appendChild(banner);
     banner.addEventListener("click", function (e) {
@@ -47,36 +65,16 @@
 
 (function () {
   "use strict";
-  // Remembers which language the visitor last read the site in, and
-  // auto-redirects a returning visitor from one language's homepage to
-  // the other's. This is functional storage (not analytics/tracking),
-  // so it runs independently of the cookie-consent banner above.
-  //
-  // Scope is deliberately limited to the two homepages ("/" and "/de/"):
-  // deep links (e.g. a shared post URL) are never redirected, so sharing
-  // a link or following a search result always lands where expected.
-  // Search engine crawlers have no stored preference, so this never
-  // affects what gets indexed — hreflang tags handle that separately.
-  var LANG_KEY = "preferred_lang";
-  var currentLang = document.documentElement.lang; // "en" or "de"
-  var storedLang = localStorage.getItem(LANG_KEY);
-
-  var path = window.location.pathname;
-  var isEnglishHome = path === "/";
-  var isGermanHome = path === "/de/" || path === "/de";
-
-  var redirected = false;
-  if (storedLang && storedLang !== currentLang) {
-    if (storedLang === "de" && isEnglishHome) {
-      redirected = true;
-      window.location.replace("/de/");
-    } else if (storedLang === "en" && isGermanHome) {
-      redirected = true;
-      window.location.replace("/");
+  // Close the language <details> dropdown when clicking outside it.
+  // Native <details> handles open/close and keyboard/screen-reader
+  // support on its own; this only adds the "click elsewhere closes it"
+  // behavior that <details> doesn't provide out of the box.
+  document.addEventListener("click", function (e) {
+    var openDropdowns = document.querySelectorAll(".lang-dropdown[open]");
+    for (var i = 0; i < openDropdowns.length; i++) {
+      if (!openDropdowns[i].contains(e.target)) {
+        openDropdowns[i].removeAttribute("open");
+      }
     }
-  }
-
-  if (!redirected && currentLang) {
-    localStorage.setItem(LANG_KEY, currentLang);
-  }
+  });
 })();

@@ -1,18 +1,20 @@
 <div>
     {{ if .Site.Params.ShowLanguageSelector }}
-    <div class="mx-auto px-4 flex max-w-5xl justify-between items-center w-full">
-    <div class="inline-flex justify-end text-sm w-full space-x-2 mt-2">
+    <div class="mx-auto px-4 flex max-w-5xl justify-end items-center w-full">
         {{ $page := . }}
-        {{ range hugo.Sites }}
-        {{ $site := . }}
-        {{ $target := $site.Home }}
-        {{ range $page.AllTranslations }}
-            {{ if eq .Language.Name $site.Language.Name }}{{ $target = . }}{{ end }}
-        {{ end }}
-        <a href="{{ $target.Permalink }}"
-           class="hover:text-primary-400 uppercase {{ if eq $site.Language.Name $page.Language.Name }}font-bold text-slate-900 dark:text-white{{ else }}text-slate-700 dark:text-slate-100 dark:hover:text-slate-50{{ end }}">{{ $site.Language.Name }}</a>
-        {{ end }}
-    </div>
+        <details class="lang-dropdown">
+            <summary>{{ .Language.Label }}</summary>
+            <div class="lang-dropdown-menu">
+                {{ range hugo.Sites }}
+                {{ $site := . }}
+                {{ $target := $site.Home }}
+                {{ range $page.AllTranslations }}
+                    {{ if eq .Language.Name $site.Language.Name }}{{ $target = . }}{{ end }}
+                {{ end }}
+                <a href="{{ $target.Permalink }}" {{ if eq $site.Language.Name $page.Language.Name }}class="active"{{ end }}>{{ $site.Language.Label }}</a>
+                {{ end }}
+            </div>
+        </details>
     </div>
     {{ end }}
     <div class="mx-auto p-4 flex max-w-5xl justify-between items-center w-full py-4">
@@ -88,12 +90,12 @@
             <h1 class="text-5xl pb-6 text-black dark:text-neutral-50 font-extrabold">{{ .Title }}</h1>
             {{ end }}
             {{ if .Description }}
-            <p class="text-md text-slate-600 font-extrabold">{{ .Description }}</p>
+            <p class="text-md text-slate-600 dark:text-slate-400 font-extrabold">{{ .Description }}</p>
             {{ end }}
         </div>
         {{ end }}
         {{ if .Params.showLastUpdate }}
-        <p class="text-sm text-center text-neutral-500">{{ i18n "last_update" }}: {{ .Lastmod.Format "2006-01-02" }}</p>
+        <p class="text-sm text-center text-neutral-500 dark:text-slate-400">{{ i18n "last_update" }}: {{ .Lastmod.Format "2006-01-02" }}</p>
         {{ end }}
 
         <div class="mx-auto flex justify-center text-primary-500">

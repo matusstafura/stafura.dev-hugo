@@ -11,12 +11,90 @@ defaultContentLanguageInSubdir = false
   locale = "en-US"
   weight = 1
 
+    [[languages.en.menus.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+    [[languages.en.menus.main]]
+    name = "Blog"
+    url = "/posts"
+    weight = 2
+
+    [[languages.en.menus.main]]
+    name = "Portfolio"
+    url = "/portfolio"
+    weight = 3
+
+    [[languages.en.menus.main]]
+    name = "About me"
+    url = "/about"
+    weight = 4
+
+    [[languages.en.menus.main]]
+    name = "GitHub"
+    url = "https://github.com/matusstafura"
+    weight = 5
+    [languages.en.menus.main.params]
+      external = true
+
+    [[languages.en.menus.footer]]
+    name = "Cookies"
+    url = "/cookies"
+    weight = 1
+
+    [[languages.en.menus.footer]]
+    name = "Privacy Policy"
+    url = "/privacy-policy"
+    weight = 2
+
   [languages.de]
   label = "Deutsch"
   locale = "de-DE"
   weight = 2
   [languages.de.params]
   description = "Matus Stafura schreibt über SEO, Marketing und Programmierung."
+
+    [[languages.de.menus.main]]
+    name = "Startseite"
+    url = "/"
+    weight = 1
+
+    [[languages.de.menus.main]]
+    name = "Blog"
+    url = "/posts"
+    weight = 2
+
+    [[languages.de.menus.main]]
+    name = "Portfolio"
+    url = "/portfolio"
+    weight = 3
+
+    [[languages.de.menus.main]]
+    name = "Über mich"
+    url = "/about"
+    weight = 4
+
+    [[languages.de.menus.main]]
+    name = "GitHub"
+    url = "https://github.com/matusstafura"
+    weight = 5
+    [languages.de.menus.main.params]
+      external = true
+
+    # Cookies/Privacy Policy are legal documents and are only translated
+    # once reviewed for legal accuracy, so these deliberately point at
+    # the absolute English URL (Hugo's absLangURL leaves already-
+    # absolute URLs untouched) rather than a non-existent /de/ page.
+    [[languages.de.menus.footer]]
+    name = "Cookies"
+    url = "/cookies/"
+    weight = 1
+
+    [[languages.de.menus.footer]]
+    name = "Datenschutzerklärung"
+    url = "/privacy-policy/"
+    weight = 2
 
 [markup.highlight]
 codeFences = true
@@ -68,43 +146,6 @@ images = ["/images/home/og_home.jpg"]
 [taxonomies]
 tag = "tags"
 category = "categories"
-
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-
-[[menu.main]]
-name = "Blog"
-url = "/posts"
-weight = 2
-
-[[menu.main]]
-name = "Portfolio"
-url = "/portfolio"
-weight = 3
-
-[[menu.main]]
-name = "About me"
-url = "/about"
-weight = 4
-
-[[menu.main]]
-name = "GitHub"
-url = "https://github.com/matusstafura"
-weight = 5
-[menu.main.params]
-    external = true
-
-[[menu.footer]]
-name = "Cookies"
-url = "/cookies"
-weight = 1
-
-[[menu.footer]]
-name = "Privacy Policy"
-url = "/privacy-policy"
-weight = 2
 
 [params.person]
   name = "Matus Stafura"

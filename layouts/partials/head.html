@@ -1,5 +1,22 @@
 <head>
 {{- partial "head/first.html" . }}
+<!-- Set the dark/light class before first paint, so returning visitors
+     (or anyone with prefers-color-scheme: dark) never see a flash of the
+     wrong theme. The toggle button's own logic in scripts.js still runs
+     later (deferred) to sync the sun/moon icon and wire up the click
+     handler — this block only handles the class, and only blocks
+     render for the few bytes it takes to run. -->
+<script>
+(function () {
+  try {
+    var stored = localStorage.getItem("theme");
+    var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (stored === "dark" || (!stored && prefersDark)) {
+      document.documentElement.classList.add("dark");
+    }
+  } catch (e) {}
+})();
+</script>
 <title>{{- .Title }}</title>
 <meta name="description" content="{{- .Description | default .Site.Params.Description -}}">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
