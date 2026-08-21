@@ -1,0 +1,5 @@
+{{ if .Params.author }}
+    {{ i18n "by" }} {{ .Params.author }}
+{{ else if .Site.Params.author }}
+    {{ i18n "by" }} {{ .Site.Params.author.name }}
+{{ end }}

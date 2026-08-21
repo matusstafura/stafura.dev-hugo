@@ -1,9 +1,22 @@
 baseURL = "https://stafura.dev/"
-locale = "en-US"
 title = "Matus Stafura"
 theme = "berg"
 enableRobotsTXT = true
 defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+[languages]
+  [languages.en]
+  label = "English"
+  locale = "en-US"
+  weight = 1
+
+  [languages.de]
+  label = "Deutsch"
+  locale = "de-DE"
+  weight = 2
+  [languages.de.params]
+  description = "Matus Stafura schreibt über SEO, Marketing und Programmierung."
 
 [markup.highlight]
 codeFences = true
@@ -33,6 +46,7 @@ date_format = "January 2, 2006"
 custom_css = [ "css/_custom.css" ]
 custom_js = [ "js/_custom.js" ]
 showDarkModeToggle = true
+ShowLanguageSelector = true
 author = "Matus Stafura"
 logo = "images/code.png"
 favicon = "images/favicon/favicon.ico"
