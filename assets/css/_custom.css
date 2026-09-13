@@ -65,7 +65,7 @@ body {
 
 /* Fake macOS terminal dots */
 .highlight::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 8px;
   left: 12px;
@@ -73,7 +73,9 @@ body {
   height: 10px;
   border-radius: 50%;
   background: #ff5f56;
-  box-shadow: 16px 0 #ffbd2e, 32px 0 #27c93f;
+  box-shadow:
+    16px 0 #ffbd2e,
+    32px 0 #27c93f;
 }
 
 /* Optional: add spacing for the dots */
@@ -84,13 +86,15 @@ body {
 
 /* Text styling */
 code {
-  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-family: "JetBrains Mono", "Fira Code", monospace;
   font-size: 0.9rem;
 }
 
 #cookie-consent-banner {
   position: fixed;
-  left: 0; right: 0; bottom: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   z-index: 9999;
   background: #1f2430;
   color: #fff;
@@ -102,8 +106,22 @@ code {
   gap: 1rem;
   font-size: 0.95rem;
 }
-#cookie-consent-banner a { color: #8ab4f8; text-decoration: underline; }
-.cookie-consent-actions { display: flex; gap: 0.5rem; }
+
+/* The theme's global `p { color: slate-700 }` rule (styles.css) is
+   unscoped and otherwise wins over this banner's inherited white
+   text, since an element selector on `p` beats inheritance from the
+   ancestor div regardless of the ancestor's own specificity. */
+#cookie-consent-banner p {
+  color: #fff;
+}
+#cookie-consent-banner a {
+  color: #8ab4f8;
+  text-decoration: underline;
+}
+.cookie-consent-actions {
+  display: flex;
+  gap: 0.5rem;
+}
 .cookie-consent-actions button {
   border: 1px solid #fff;
   background: transparent;
