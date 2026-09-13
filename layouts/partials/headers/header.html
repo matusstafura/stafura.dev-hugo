@@ -1,22 +1,4 @@
 <div>
-    {{ if .Site.Params.ShowLanguageSelector }}
-    <div class="mx-auto px-4 flex max-w-5xl justify-end items-center w-full">
-        {{ $page := . }}
-        <details class="lang-dropdown">
-            <summary>{{ .Language.Label }}</summary>
-            <div class="lang-dropdown-menu">
-                {{ range hugo.Sites }}
-                {{ $site := . }}
-                {{ $target := $site.Home }}
-                {{ range $page.AllTranslations }}
-                    {{ if eq .Language.Name $site.Language.Name }}{{ $target = . }}{{ end }}
-                {{ end }}
-                <a href="{{ $target.Permalink }}" {{ if eq $site.Language.Name $page.Language.Name }}class="active"{{ end }}>{{ $site.Language.Label }}</a>
-                {{ end }}
-            </div>
-        </details>
-    </div>
-    {{ end }}
     <div class="mx-auto p-4 flex max-w-5xl justify-between items-center w-full py-4">
 
         <div class="flex items-center space-x-4">
@@ -59,6 +41,22 @@
                     <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#ffffff" d="M240.448 240.448a384 384 0 1 0 559.424 525.696 448 448 0 0 1-542.016-542.08 390.592 390.592 0 0 0-17.408 16.384zm181.056 362.048a384 384 0 0 0 525.632 16.384A448 448 0 1 1 405.056 76.8a384 384 0 0 0 16.448 525.696z"></path></g></svg>
                 </span>
             </button>
+            {{ end }}
+            {{ if .Site.Params.ShowLanguageSelector }}
+            {{ $page := . }}
+            <details class="lang-dropdown">
+                <summary>{{ .Language.Label }}</summary>
+                <div class="lang-dropdown-menu">
+                    {{ range hugo.Sites }}
+                    {{ $site := . }}
+                    {{ $target := $site.Home }}
+                    {{ range $page.AllTranslations }}
+                        {{ if eq .Language.Name $site.Language.Name }}{{ $target = . }}{{ end }}
+                    {{ end }}
+                    <a href="{{ $target.Permalink }}" {{ if eq $site.Language.Name $page.Language.Name }}class="active"{{ end }}>{{ $site.Language.Label }}</a>
+                    {{ end }}
+                </div>
+            </details>
             {{ end }}
             </div>
         </nav>
