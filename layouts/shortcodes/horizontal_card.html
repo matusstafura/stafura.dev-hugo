@@ -2,7 +2,7 @@
 {{ if .enable }}
 <section class="space-y-8">
   {{ range .feature_item }}
-  <div class="md:flex bg-white dark:bg-gray-800 rounded shadow space-x-8">
+  <div class="space-x-8 bg-white rounded shadow md:flex dark:bg-gray-800">
     <div class="w-1/2">
       <picture>
         <source type="image/webp" srcset="{{ replaceRE `\.(jpe?g|png)$` ".webp" .image }}">
@@ -13,7 +13,7 @@
       <h3>{{ .title }}</h3>
       <div class="text-slate-500 dark:text-gray-300">{{ .description }}</div>
       <div class="py-8">
-        {{ if .link }}<a href="{{ .link }}" class="px-6 no-underline py-3 bg-primary-500 rounded shadow-md text-white hover:underline">
+        {{ if .link }}<a href="{{ .link }}" class="cta-button inline-block px-6 py-3 rounded-lg font-medium text-white no-underline bg-primary-500 shadow-md transition-colors duration-150 hover:bg-primary-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 dark:hover:bg-primary-400">
           {{ .button | default "Read more ..."}}</a>{{ end }}
       </div>
     </div>

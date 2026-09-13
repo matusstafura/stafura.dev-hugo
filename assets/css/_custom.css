@@ -90,6 +90,17 @@ code {
   font-size: 0.9rem;
 }
 
+/* horizontal_card's CTA buttons render inside `.prose` content. The
+   theme's `.prose a { color: var(--color-primary-600) }` (styles.css)
+   is a class+element selector, more specific than a single utility
+   class like `text-white`, so it silently wins over it and over
+   `.prose a:hover`'s orange hover color. Scoping through `.prose` here
+   too (two classes) is enough to beat both without `!important`. */
+.prose .cta-button,
+.prose .cta-button:hover {
+  color: #fff;
+}
+
 #cookie-consent-banner {
   position: fixed;
   left: 0;
