@@ -23,6 +23,12 @@ horizontal_card:
 
 ## Various Projects
 
+### Zen Polyglot
+
+Free interactive grammar practice for language learners, with drills for German, Swedish and more.
+
+https://zenpolyglot.com
+
 ### Anki deck to CSV converter. 
 
 Converts Anki decks to CSV format for easier data manipulation and analysis. Written in Python, this tool is useful for educators and students who want to export their Anki flashcards into a more accessible format.
