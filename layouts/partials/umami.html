@@ -1,3 +1,6 @@
 {{ with .Site.Params.plugins.umami_website_id }}
 <script defer src="{{ $.Site.Params.plugins.umami_src | default "https://cloud.umami.is/script.js" }}" data-website-id="{{ . }}"></script>
+{{ with $.Site.Params.plugins.umami_heatmap_src }}
+<script defer src="{{ . }}" data-website-id="{{ $.Site.Params.plugins.umami_website_id }}"></script>
+{{ end }}
 {{ end }}

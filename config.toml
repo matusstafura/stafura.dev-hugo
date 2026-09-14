@@ -133,8 +133,9 @@ images = ["/images/home/og_home.jpg"]
 
   [params.plugins]
   # tagmanager = "GTM-XXXXXXX" via environment variable
-  umami_website_id = "b9c04d73-d505-4c2c-8f3e-99176f1c9590"
-  umami_src = "https://cloud.umami.is/script.js"
+  umami_website_id = "3841c281-0fa2-4c78-9105-6087965f208e"
+  umami_src = "https://umami.intera.sk/script.js"
+  umami_heatmap_src = "https://umami.intera.sk/recorder.js"
 
   [params.posts]
   showPrevNext = true
