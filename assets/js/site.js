@@ -27,6 +27,64 @@
     if (e.key === "Escape") closeDropdowns(null);
   });
 
+  // Copy button on code blocks in post content.
+  var COPY_ICON =
+    '<svg class="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>' +
+    '<svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>';
+
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      return navigator.clipboard.writeText(text);
+    }
+    return new Promise(function (resolve, reject) {
+      var ta = document.createElement("textarea");
+      ta.value = text;
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      var ok = false;
+      try {
+        ok = document.execCommand("copy");
+      } catch (err) {}
+      ta.remove();
+      ok ? resolve() : reject();
+    });
+  }
+
+  var blocks = document.querySelectorAll(".prose pre");
+  for (var b = 0; b < blocks.length; b++) {
+    var pre = blocks[b];
+    var host = pre.parentNode;
+    if (!host.classList.contains("highlight")) {
+      host = document.createElement("div");
+      host.className = "highlight";
+      pre.parentNode.insertBefore(host, pre);
+      host.appendChild(pre);
+    }
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "copy-code";
+    btn.setAttribute("aria-label", "Copy code");
+    btn.title = "Copy code";
+    btn.innerHTML = COPY_ICON;
+    host.appendChild(btn);
+  }
+
+  document.addEventListener("click", function (e) {
+    var btn = e.target.closest(".copy-code");
+    if (!btn) return;
+    var code = btn.parentNode.querySelector("pre");
+    copyText(code.innerText.replace(/\n$/, "")).then(function () {
+      btn.setAttribute("data-copied", "");
+      btn.setAttribute("aria-label", "Copied");
+      setTimeout(function () {
+        btn.removeAttribute("data-copied");
+        btn.setAttribute("aria-label", "Copy code");
+      }, 2000);
+    }, function () {});
+  });
+
   // Cookie consent
   var CONSENT_KEY = "cookie_consent";
   var consent = null;
