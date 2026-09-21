@@ -19,15 +19,24 @@ horizontal_card:
       image: "/images/home/berg.jpg"
       link: "https://berg.stafura.dev/"
       button: "Visit berg.stafura.dev"
+    - title: "Zen Polyglot - Grammar practice for language learners"
+      description: "Free interactive grammar drills with spaced-repetition review for German, Swedish and Japanese."
+      image: "/images/home/polyglot.jpg"
+      link: "https://zenpolyglot.com/"
+      button: "Visit zenpolyglot.com"
+    - title: "Brunel - Machine plaster and screed"
+      description: "Website for a Slovak construction company specialising in machine plastering and screeds."
+      image: "/images/home/brunel.jpg"
+      link: "https://brunel.sk/"
+      button: "Visit brunel.sk"
+    - title: "Dubacik - Aparthouse in Tylicz"
+      description: "Website for a cozy two-apartment aparthouse in the Polish mountain village of Tylicz."
+      image: "/images/home/dubacik.jpg"
+      link: "https://dubacik.pl/"
+      button: "Visit dubacik.pl"
 ---
 
 ## Various Projects
-
-### Zen Polyglot
-
-Free interactive grammar practice for language learners, with drills for German, Swedish and more.
-
-https://zenpolyglot.com
 
 ### Anki deck to CSV converter. 
 

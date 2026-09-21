@@ -19,15 +19,24 @@ horizontal_card:
       image: "/images/home/berg.jpg"
       link: "https://berg.stafura.dev/"
       button: "berg.stafura.dev besuchen"
+    - title: "Zen Polyglot - Grammatikübungen für Sprachlernende"
+      description: "Kostenlose interaktive Grammatikübungen mit Spaced-Repetition-Wiederholung für Deutsch, Schwedisch und Japanisch."
+      image: "/images/home/polyglot.jpg"
+      link: "https://zenpolyglot.com/"
+      button: "zenpolyglot.com besuchen"
+    - title: "Brunel - Maschinenputz und Estrich"
+      description: "Website eines slowakischen Bauunternehmens, das auf Maschinenputz und Estrich spezialisiert ist."
+      image: "/images/home/brunel.jpg"
+      link: "https://brunel.sk/"
+      button: "brunel.sk besuchen"
+    - title: "Dubacik - Aparthaus in Tylicz"
+      description: "Website eines gemütlichen Aparthauses mit zwei Apartments im polnischen Bergdorf Tylicz."
+      image: "/images/home/dubacik.jpg"
+      link: "https://dubacik.pl/"
+      button: "dubacik.pl besuchen"
 ---
 
 ## Verschiedene Projekte
-
-### Zen Polyglot
-
-Kostenlose interaktive Grammatikübungen für Sprachlernende, mit Drills für Deutsch, Schwedisch und mehr.
-
-https://zenpolyglot.com
 
 ### Anki-Deck-zu-CSV-Konverter
 

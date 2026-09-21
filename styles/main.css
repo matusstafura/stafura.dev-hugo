@@ -57,8 +57,8 @@
   --muted: #64645e;
   --line: #e4e4df;
   --edge: #0c0c0c;
-  --accent: #ff4d00;
-  --on-accent: #0c0c0c;
+  --accent: #3b6fd4;
+  --on-accent: #ffffff;
   --stripe-a: #ffffff;
   --stripe-b: #f3f3f0;
 }
@@ -71,6 +71,8 @@
   --muted: #9d9d96;
   --line: #2b2b30;
   --edge: #3c3c43;
+  --accent: #7ba3f0;
+  --on-accent: #0c0c0c;
   --stripe-a: #0a0a0b;
   --stripe-b: #141417;
 }
