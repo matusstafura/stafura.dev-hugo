@@ -1,39 +1,49 @@
 {{ define "main" }}
+{{- if eq .Type "posts" }}
+<article>
+  {{- $meta := printf `<span class="label"><time datetime="%s">%s</time> · %s %s</span>` (.Date.Format "2006-01-02") (.Date.Format "2006-01-02") (string .ReadingTime) (i18n "min_read") }}
+  {{- partial "page-header.html" (dict "title" .Title "description" .Description "eyebrow" $meta) }}
+  {{- with .Params.tags }}
+  <div class="border-b border-line px-5 py-3 sm:px-8">{{ partial "tags.html" $ }}</div>
+  {{- end }}
 
-{{ partial "plugin/breadcrumbs" . }}
+  <div class="px-5 py-10 sm:px-8">
+    {{- if .Params.toc }}
+    {{- with .TableOfContents }}
+    {{- if ne . "<nav id=\"TableOfContents\"></nav>" }}
+    <details open class="toc mb-10 border border-edge p-4">
+      <summary class="label cursor-pointer text-ink">{{ i18n "contents" }}</summary>
+      <div class="mt-3">{{ . }}</div>
+    </details>
+    {{- end }}
+    {{- end }}
+    {{- end }}
+    <div class="prose prose-lg">{{ .Content }}</div>
+  </div>
 
-<div class="text-center">
-    {{ if (eq .Type "posts") }}
-    <div class="text-sm text-slate-500 dark:text-slate-400 py-2">
-        {{ if and (.Site.Params.Posts.showAuthor) (eq .Type "posts") }}
-            {{ partial "plugin/author" . }}
-        {{ end }}
-        {{ if .Site.Params.Posts.showDate }}
-            {{ partial "plugin/date" . }}
-        {{ end }}
-    </div>
-    {{ end }}
-</div>
-
-
-{{ if .Site.Params.Posts.showShare }}
-<div>
-{{ partial "plugin/share" . }}
-</div>
-{{ end }}
-
-<div class="lg:flex">
-{{ if .Params.toc }}
-<div>
-    {{ partial "toc.html" . }}
-</div>
-{{ end }}
-<article>  
-    {{ .Content }}
+  {{- if .Site.Params.Posts.showPrevNext }}
+  {{- if or .NextInSection .PrevInSection }}
+  <nav aria-label="Posts" class="grid gap-4 border-t border-line px-5 py-8 sm:grid-cols-2 sm:px-8">
+    {{- with .NextInSection }}
+    <a href="{{ .Permalink }}" class="card gap-1 p-4 sm:col-start-1">
+      <span class="label inline-flex items-center gap-1">{{ partial "icons/arrow-left.html" }} {{ i18n "newer" }}</span>
+      <span class="font-semibold leading-snug tracking-tight">{{ .Title }}</span>
+    </a>
+    {{- end }}
+    {{- with .PrevInSection }}
+    <a href="{{ .Permalink }}" class="card gap-1 p-4 sm:col-start-2 sm:text-right">
+      <span class="label inline-flex items-center gap-1 sm:justify-end">{{ i18n "older" }} {{ partial "icons/arrow-right.html" }}</span>
+      <span class="font-semibold leading-snug tracking-tight">{{ .Title }}</span>
+    </a>
+    {{- end }}
+  </nav>
+  {{- end }}
+  {{- end }}
 </article>
+{{- else }}
+{{- partial "page-header.html" (dict "title" .Title "description" .Description) }}
+<div class="px-5 py-10 sm:px-8">
+  <div class="prose prose-lg">{{ .Content }}</div>
 </div>
-
-{{ partial "plugin/prevnext" . }}
-
-{{ partial "profile" . }}
+{{- end }}
 {{ end }}

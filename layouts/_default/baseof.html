@@ -1,23 +1,16 @@
 <!DOCTYPE html>
-<html {{ with .Site.Language.Name }}lang="{{.}}"{{ end }}>
-    {{ $theme := .Site.Params.colorTheme }}
-    {{- partial "head.html" . -}}
-    {{ partial "schema-person.html" . }}
-    <body class="bg-[linear-gradient(135deg,_#ffffff_35.71%,_#f5f5f5_35.71%,_#f5f5f5_50%,_#ffffff_50%,_#ffffff_85.71%,_#f5f5f5_85.71%,_#f5f5f5_100%)] bg-[length:9.9px_9.9px]">
-        {{- partial "body/first.html" . -}}
-        <div class="bg-auto h-full min-h-screen bg-gradient-to-b dark:from-black dark:to-gray-800">
-            <div class="bg-white dark:bg-gray-800 border-x dark:border-gray-800 p-4 max-w-5xl mx-auto">
-                {{- $header := .Site.Params.Header | default "header" }}
-                {{- partial (printf "headers/%s.html" $header) . -}}
-                <div class="mx-auto xl:p-0 max-w-5xl">
-                    <div class="p-4 max-w-5xl prose dark:prose-invert" id="main">
-                        {{- block "main" . }}{{- end }}
-                    </div>
-                </div>
-                {{ $footer := .Site.Params.Footer | default "footer" }}
-                {{- partial (printf "footers/%s.html" $footer) . -}}
-                {{ partial "scripts.html" . }}
-            </div>
-        </div>
-    </body>
+<html lang="{{ .Site.Language.Name }}">
+{{- partial "head.html" . -}}
+<body>
+  {{- partial "tagmanager-body.html" . -}}
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-[70] btn">{{ i18n "skip_to_content" }}</a>
+  <div class="mx-3 my-3 flex min-h-[calc(100dvh-1.5rem)] max-w-3xl flex-col border border-edge bg-paper sm:mx-auto sm:my-8 sm:min-h-[calc(100dvh-4rem)]">
+    {{- partial "header.html" . -}}
+    <main id="main" class="flex-1">
+      {{- block "main" . }}{{- end }}
+    </main>
+    {{- partial "footer.html" . -}}
+  </div>
+  {{- partial "scripts.html" . -}}
+</body>
 </html>

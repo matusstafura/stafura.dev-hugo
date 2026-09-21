@@ -1,0 +1,11 @@
+<footer class="border-t border-line px-5 py-6 sm:px-8">
+  <div class="flex flex-col gap-3 font-mono text-xs text-muted sm:flex-row sm:items-center sm:justify-between">
+    <p>© {{ now.Year }} {{ .Site.Params.author }}</p>
+    <nav aria-label="Legal" class="flex flex-wrap items-center gap-x-5 gap-y-2">
+      {{- range .Site.Menus.footer }}
+      <a href="{{ .URL | absLangURL }}" class="link-quiet">{{ .Name }}</a>
+      {{- end }}
+      <a href="#main" class="link-quiet inline-flex items-center gap-1">{{ i18n "back_to_top" }} <span class="-rotate-90">{{ partial "icons/arrow-right.html" }}</span></a>
+    </nav>
+  </div>
+</footer>

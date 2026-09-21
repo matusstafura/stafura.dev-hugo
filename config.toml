@@ -1,6 +1,5 @@
 baseURL = "https://stafura.dev/"
 title = "Matus Stafura"
-theme = "berg"
 enableRobotsTXT = true
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
@@ -121,8 +120,6 @@ pagerSize = 100
 [params]
 paginate = 5
 date_format = "January 2, 2006"
-custom_css = [ "css/_custom.css" ]
-custom_js = [ "js/_custom.js" ]
 showDarkModeToggle = true
 ShowLanguageSelector = true
 author = "Matus Stafura"
@@ -136,6 +133,22 @@ images = ["/images/home/og_home.jpg"]
   umami_website_id = "3841c281-0fa2-4c78-9105-6087965f208e"
   umami_src = "https://umami.53186567.xyz/script.js"
   umami_heatmap_src = "https://umami.53186567.xyz/recorder.js"
+
+  [[params.social]]
+  name = "GitHub"
+  url = "https://github.com/matusstafura"
+
+  [[params.social]]
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/matus-stafura/"
+
+  [[params.social]]
+  name = "dev.to"
+  url = "https://dev.to/matusstafura"
+
+  [[params.social]]
+  name = "Bluesky"
+  url = "https://bsky.app/profile/stafura.bsky.social"
 
   [params.posts]
   showPrevNext = true

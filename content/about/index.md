@@ -6,7 +6,7 @@ author: "Matus Stafura"
 
 ## About
 
-<img src="/images/profile.jpg" alt="Matus Stafura" class="about-avatar">
+<img src="/images/profile.jpg" alt="Matus Stafura" class="not-prose mb-8 size-32 border border-edge object-cover shadow-[6px_6px_0_var(--accent)]">
 
 Hello! I'm a developer and strategist from Slovakia. Most of my time is spent at Megamix of which I'm the co-owner.
 
@@ -20,11 +20,7 @@ When it comes to programming, my tools of choice include Ubuntu, PHP, Go, bash, 
 
 - matus [at] stafura [dot] dev
 
-<div class="about-social">
-  <a href="https://github.com/matusstafura" aria-label="GitHub"><img src="/images/about/github.png" alt="GitHub"></a>
-  <a href="https://bsky.app/profile/stafura.bsky.social" aria-label="Bluesky"><img src="/images/about/bluesky.png" alt="Bluesky"></a>
-  <a href="https://www.linkedin.com/in/matus-stafura/" aria-label="LinkedIn"><img src="/images/about/linkedin.png" alt="LinkedIn"></a>
-</div>
+[GitHub](https://github.com/matusstafura) · [Bluesky](https://bsky.app/profile/stafura.bsky.social) · [LinkedIn](https://www.linkedin.com/in/matus-stafura/)
 
 ## Certifications
 

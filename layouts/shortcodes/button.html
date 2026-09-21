@@ -1,8 +1,4 @@
-{{ $text := .Get "text" }}
-{{ $link := .Get "link" }}
-{{ $target := .Get "target" | default "_self" }}
-
-<div class="flex justify-center my-4">
-  <a href="{{ $link }}" class="cta-button inline-block px-6 py-3 rounded-lg font-medium text-white no-underline bg-primary-500 shadow-md transition-colors duration-150 hover:bg-primary-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 dark:hover:bg-primary-400" target="{{ $target }}"
-    rel="noopener noreferrer nofollow">{{ $text }}</a>
+{{- $target := .Get "target" | default "_self" -}}
+<div class="not-prose my-6">
+  <a href="{{ .Get "link" }}" class="btn" target="{{ $target }}"{{ if eq $target "_blank" }} rel="noopener noreferrer nofollow"{{ end }}>{{ .Get "text" }}</a>
 </div>

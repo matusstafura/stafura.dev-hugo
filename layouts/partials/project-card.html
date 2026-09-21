@@ -1,0 +1,16 @@
+{{- $webp := replaceRE `\.(jpe?g|png)$` ".webp" .image }}
+<li class="card">
+  <picture class="block border-b border-edge">
+    {{- if fileExists (printf "static%s" $webp) }}<source type="image/webp" srcset="{{ $webp }}">{{ end }}
+    <img src="{{ .image }}" alt="" loading="lazy" decoding="async" width="480" height="270" class="aspect-video w-full object-cover">
+  </picture>
+  <div class="flex flex-1 flex-col gap-2 p-4">
+    <h3 class="text-base font-semibold leading-snug tracking-tight">
+      {{- if .link }}<a href="{{ .link }}" class="link-quiet after:absolute after:inset-0 after:content-['']" target="_blank" rel="noopener noreferrer">{{ .title }}</a>{{ else }}{{ .title }}{{ end -}}
+    </h3>
+    <p class="text-sm text-muted">{{ .description }}</p>
+    {{- if .link }}
+    <p class="label mt-auto inline-flex items-center gap-1 pt-2 text-ink">{{ .button | default (i18n "visit") }} {{ partial "icons/arrow-up-right.html" }}</p>
+    {{- end }}
+  </div>
+</li>

@@ -1,0 +1,9 @@
+<li class="group relative grid gap-x-6 gap-y-1 px-5 py-4 transition-colors hover:bg-tint sm:grid-cols-[6.5rem_1fr] sm:px-8">
+  <time class="label pt-[0.35rem]" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+  <div class="min-w-0">
+    <h3 class="text-lg font-semibold leading-snug tracking-tight">
+      <a href="{{ .Permalink }}" class="link-quiet after:absolute after:inset-0 after:content-['']">{{ .Title }}</a>
+    </h3>
+    {{- with .Description }}<p class="mt-1 line-clamp-2 text-[0.9375rem] text-muted">{{ . }}</p>{{ end }}
+  </div>
+</li>

@@ -1,24 +1,9 @@
-{{ with .Page.Params.horizontal_card }}
-{{ if .enable }}
-<section class="space-y-8">
-  {{ range .feature_item }}
-  <div class="space-x-8 bg-white rounded shadow md:flex dark:bg-gray-800">
-    <div class="w-1/2">
-      <picture>
-        <source type="image/webp" srcset="{{ replaceRE `\.(jpe?g|png)$` ".webp" .image }}">
-        <img src="{{ .image }}" loading="lazy" decoding="async" alt="{{ .title }}" width="480" height="270" class="m-0">
-      </picture>
-    </div>
-    <div class="w-1/2 p-4">
-      <h3>{{ .title }}</h3>
-      <div class="text-slate-500 dark:text-gray-300">{{ .description }}</div>
-      <div class="py-8">
-        {{ if .link }}<a href="{{ .link }}" class="cta-button inline-block px-6 py-3 rounded-lg font-medium text-white no-underline bg-primary-500 shadow-md transition-colors duration-150 hover:bg-primary-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 dark:hover:bg-primary-400">
-          {{ .button | default "Read more ..."}}</a>{{ end }}
-      </div>
-    </div>
-  </div>
-  {{ end }}
-</section>
-{{ end }}
-{{ end }}
+{{- with .Page.Params.horizontal_card }}
+{{- if .enable }}
+<ul class="not-prose my-8 grid list-none gap-4 p-0 sm:grid-cols-3">
+  {{- range .feature_item }}
+  {{ partial "project-card.html" . }}
+  {{- end }}
+</ul>
+{{- end }}
+{{- end }}

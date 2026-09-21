@@ -1,0 +1,61 @@
+{{- $page := . -}}
+<header class="relative z-30 border-b border-line">
+  <div class="flex h-16 items-center justify-between gap-3 px-5 sm:px-8">
+    <a href="{{ "" | relLangURL }}" class="link-quiet -mx-1 px-1 text-lg font-semibold tracking-tight">
+      {{- .Site.Title -}}<span class="cursor" aria-hidden="true"></span>
+    </a>
+
+    <div class="flex items-center gap-2">
+      <nav aria-label="{{ i18n "navigation" }}" class="mr-3 hidden items-center gap-5 font-mono text-[0.8125rem] font-medium md:flex">
+        {{- range .Site.Menus.main }}
+        {{- $url := .URL | relLangURL }}
+        {{- $active := cond (eq .URL "/") (eq $page.RelPermalink $url) (hasPrefix $page.RelPermalink $url) }}
+        {{- if and (eq .URL "/posts") (eq $page.Type "posts") }}{{ $active = true }}{{ end }}
+        <a href="{{ $url }}" class="link-quiet inline-flex items-center gap-1"{{ if $active }} aria-current="page"{{ end }}{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>
+          {{- .Name }}{{ if .Params.external }} {{ partial "icons/arrow-up-right.html" }}{{ end -}}
+        </a>
+        {{- end }}
+      </nav>
+
+      {{- if .Site.Params.ShowLanguageSelector }}
+      <details class="relative" data-dropdown>
+        <summary class="btn btn-outline" aria-label="{{ i18n "language" }}">
+          {{ .Language.Name | upper }} {{ partial "icons/chevron-down.html" }}
+        </summary>
+        <div class="absolute right-0 top-full z-40 mt-2 min-w-36 border border-edge bg-paper p-2 shadow-[4px_4px_0_var(--accent)]">
+          {{- range hugo.Sites }}
+          {{- $site := . }}
+          {{- $target := $site.Home }}
+          {{- range $page.AllTranslations }}
+          {{- if eq .Language.Name $site.Language.Name }}{{ $target = . }}{{ end }}
+          {{- end }}
+          <a href="{{ $target.Permalink }}" hreflang="{{ $site.Language.Name }}" class="link-quiet block px-2 py-1.5 text-sm"{{ if eq $site.Language.Name $page.Language.Name }} aria-current="page"{{ end }}>{{ $site.Language.Label }}</a>
+          {{- end }}
+        </div>
+      </details>
+      {{- end }}
+
+      {{- if .Site.Params.showDarkModeToggle }}
+      <button type="button" class="btn btn-outline btn-icon" data-theme-toggle aria-label="{{ i18n "toggle_theme" }}">
+        <span class="dark:hidden">{{ partial "icons/moon.html" }}</span>
+        <span class="hidden dark:inline">{{ partial "icons/sun.html" }}</span>
+      </button>
+      {{- end }}
+
+      <details class="group md:hidden" data-dropdown>
+        <summary class="btn btn-outline btn-icon" aria-label="{{ i18n "navigation" }}">
+          <span class="group-open:hidden">{{ partial "icons/menu.html" }}</span>
+          <span class="hidden group-open:inline">{{ partial "icons/close.html" }}</span>
+        </summary>
+        <nav aria-label="{{ i18n "navigation" }}" class="absolute inset-x-0 top-full z-40 border-b border-edge bg-paper px-5 py-3 sm:px-8">
+          {{- range .Site.Menus.main }}
+          {{- $url := .URL | relLangURL }}
+          <a href="{{ $url }}" class="link-quiet flex w-fit items-center gap-1 py-2 font-mono text-sm font-medium"{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>
+            {{- .Name }}{{ if .Params.external }} {{ partial "icons/arrow-up-right.html" }}{{ end -}}
+          </a>
+          {{- end }}
+        </nav>
+      </details>
+    </div>
+  </div>
+</header>

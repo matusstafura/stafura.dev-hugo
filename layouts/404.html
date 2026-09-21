@@ -1,0 +1,8 @@
+{{ define "main" }}
+<div class="px-5 py-20 sm:px-8 sm:py-28">
+  <p class="label mb-4">Error</p>
+  <h1 class="text-7xl font-semibold tracking-tight sm:text-8xl">404<span class="cursor"></span></h1>
+  <p class="mt-6 max-w-[40ch] text-lg text-muted">{{ i18n "not_found" }}</p>
+  <a href="{{ "" | relLangURL }}" class="btn mt-8">{{ partial "icons/arrow-left.html" }} {{ i18n "home" }}</a>
+</div>
+{{ end }}

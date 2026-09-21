@@ -1,8 +1,0 @@
-{{ $faqData := .Page.Params.questions }}
-{{ $faqDataLength := len $faqData }}
-{{- range $index, $faq := $faqData -}}
-<div class="faq">
-    <span class="font-bold">{{ $faq.question }}</span>
-    <p>{{ $faq.answer }}</p>
-</div>
-{{- end -}}

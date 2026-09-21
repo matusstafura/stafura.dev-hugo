@@ -1,0 +1,56 @@
+{{ define "main" }}
+{{- $posts := where .Site.RegularPages "Type" "posts" -}}
+{{- $person := .Site.Params.person -}}
+
+<section class="border-b border-line px-5 pb-12 pt-10 sm:px-8 sm:pb-16 sm:pt-16">
+  <div class="flex flex-col-reverse gap-8 sm:flex-row sm:items-start sm:justify-between">
+    <div class="max-w-[34rem]">
+      {{- with .Params.eyebrow }}<p class="label mb-5">{{ . }}</p>{{ end }}
+      <h1 class="text-balance text-5xl font-semibold leading-[1.02] tracking-tight sm:text-6xl">{{ .Params.heading | default .Title }}</h1>
+      <div class="prose prose-lg mt-6 text-pretty">{{ .Content }}</div>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="{{ "posts/" | relLangURL }}" class="btn">{{ i18n "read_blog" }} {{ partial "icons/arrow-right.html" }}</a>
+        <a href="{{ "portfolio/" | relLangURL }}" class="btn btn-outline">{{ i18n "see_work" }}</a>
+      </div>
+      <ul class="mt-8 flex flex-wrap gap-x-5 gap-y-2 font-mono text-[0.8125rem] font-medium">
+        {{- range .Site.Params.social }}
+        <li><a href="{{ .url }}" class="link" target="_blank" rel="me noopener noreferrer">{{ .name }}</a></li>
+        {{- end }}
+      </ul>
+    </div>
+    <picture class="shrink-0">
+      <source type="image/webp" srcset="{{ replaceRE `\.jpg$` ".webp" $person.image }}">
+      <img src="{{ $person.image }}" alt="{{ $person.name }}" width="144" height="144" decoding="async" fetchpriority="high"
+           class="size-28 border border-edge object-cover shadow-[6px_6px_0_var(--accent)] sm:size-36">
+    </picture>
+  </div>
+</section>
+
+<section class="border-b border-line" aria-labelledby="latest">
+  <div class="flex items-baseline justify-between px-5 pb-3 pt-8 sm:px-8">
+    <h2 id="latest" class="label text-ink"><span class="text-accent">01</span> / {{ i18n "latest_posts" }}</h2>
+    <a href="{{ "posts/" | relLangURL }}" class="link font-mono text-[0.8125rem] font-medium">{{ i18n "all_posts" }}</a>
+  </div>
+  <ul class="divide-y divide-line pb-4">
+    {{- range first 5 $posts }}
+    {{ partial "post-row.html" . }}
+    {{- end }}
+  </ul>
+</section>
+
+{{- with .Site.GetPage "/portfolio" }}
+{{- with .Params.horizontal_card }}
+<section class="px-5 pb-12 pt-8 sm:px-8" aria-labelledby="projects">
+  <div class="flex items-baseline justify-between pb-5">
+    <h2 id="projects" class="label text-ink"><span class="text-accent">02</span> / {{ i18n "projects" }}</h2>
+    <a href="{{ "portfolio/" | relLangURL }}" class="link font-mono text-[0.8125rem] font-medium">{{ i18n "all_projects" }}</a>
+  </div>
+  <ul class="grid gap-4 sm:grid-cols-3">
+    {{- range .feature_item }}
+    {{ partial "project-card.html" . }}
+    {{- end }}
+  </ul>
+</section>
+{{- end }}
+{{- end }}
+{{ end }}

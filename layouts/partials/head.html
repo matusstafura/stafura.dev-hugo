@@ -1,54 +1,54 @@
 <head>
-{{- partial "head/first.html" . }}
-<!-- Set the dark/light class before first paint, so returning visitors
-     (or anyone with prefers-color-scheme: dark) never see a flash of the
-     wrong theme. The toggle button's own logic in scripts.js still runs
-     later (deferred) to sync the sun/moon icon and wire up the click
-     handler — this block only handles the class, and only blocks
-     render for the few bytes it takes to run. -->
-<script>
-(function () {
-  try {
-    var stored = localStorage.getItem("theme");
-    var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    if (stored === "dark" || (!stored && prefersDark)) {
-      document.documentElement.classList.add("dark");
-    }
-  } catch (e) {}
-})();
-</script>
-<title>{{- .Title }}</title>
-<meta name="description" content="{{- .Description | default .Site.Params.Description -}}">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="canonical" href="{{ .Permalink }}" />
-{{- if and (eq .Kind "term") (lt (len .Pages) 3) }}
-<meta name="robots" content="noindex,follow">
-{{- end }}
-<!-- Alternate language versions -->
-{{- range .AllTranslations }}
-<link rel="alternate" hreflang="{{ .Language.Name }}" href="{{ .Permalink }}" />
-{{- if .Language.IsDefault }}
-<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
-{{- end }}
-{{- end }}
-<!-- Favicon -->
-{{- if .Site.Params.favicon -}}
-<link rel="icon" href="{{ .Site.BaseURL }}{{ .Site.Params.favicon }}" type="image/x-icon">
-{{ end -}}
-{{ template "_internal/opengraph.html" . }}
-{{- template "_internal/twitter_cards.html" . }}
-{{- range .AlternativeOutputFormats }}
-<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}" title="{{ $.Site.Title }}">
-{{- end }}
-{{- partial "head/seo.html" . -}}
-{{- partial "head/link.html" . -}}
-{{- partial "faq.html" . -}}
-{{ if eq .Type "posts" }}
-{{- partial "markup/blogposting.html" . -}}
-{{ end -}}
-{{ if hugo.IsProduction }}
-{{ partial "umami.html" . }}
-{{ end }}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{- partial "tagmanager-head.html" . }}
+  {{- /* Set the dark class before first paint so nobody sees a flash of the
+         wrong theme. The toggle itself lives in assets/js/site.js. */}}
+  <script>
+    try {
+      var t = localStorage.getItem("theme");
+      if (t === "dark" || (!t && matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.classList.add("dark");
+      }
+    } catch (e) {}
+  </script>
+  <title>{{ .Title }}</title>
+  <meta name="description" content="{{ .Description | default .Site.Params.description }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{- if and (eq .Kind "term") (lt (len .Pages) 3) }}
+  <meta name="robots" content="noindex,follow">
+  {{- end }}
+  {{- range .AllTranslations }}
+  <link rel="alternate" hreflang="{{ .Language.Name }}" href="{{ .Permalink }}">
+  {{- if .Language.IsDefault }}
+  <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+  {{- end }}
+  {{- end }}
+  {{- with .Site.Params.favicon }}
+  <link rel="icon" href="{{ . | absURL }}" type="image/x-icon">
+  {{- end }}
+  <meta name="color-scheme" content="light dark">
+  <link rel="preload" href="/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/geist-mono-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  {{- $css := resources.Get "css/site.css" | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{- template "_internal/opengraph.html" . }}
+  {{- template "_internal/twitter_cards.html" . }}
+  {{- range .AlternativeOutputFormats }}
+  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}" title="{{ $.Site.Title }}">
+  {{- end }}
+  {{- with .Site.Params.verification.google }}
+  <meta name="google-site-verification" content="{{ . }}">
+  {{- end }}
+  {{- with .Site.Params.verification.bing }}
+  <meta name="msvalidate.01" content="{{ . }}">
+  {{- end }}
+  {{- partial "schema-person.html" . }}
+  {{- partial "faq.html" . }}
+  {{- if eq .Type "posts" }}
+  {{- partial "schema-blogposting.html" . }}
+  {{- end }}
+  {{- if hugo.IsProduction }}
+  {{- partial "umami.html" . }}
+  {{- end }}
 </head>

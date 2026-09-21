@@ -2,12 +2,8 @@
 title: "Matus Stafura: SEO, Marketing & Programming"
 description: "Explore Matus Stafura's expert insights on SEO strategies, digital marketing trends, and programming tips. Dive into comprehensive guides and thought-provoking articles today."
 images: ["/images/home/og_home.jpg"]
-hideHeader: true
+eyebrow: "Developer & e-commerce entrepreneur · Slovakia"
+heading: "Hi, I'm Matus."
 ---
 
-## Latest Posts
-
-{{< latest-posts-horizontal1 count="5" >}}
-
-{{< button text="more articles" link="/posts/" >}}
-
+I build e-commerce software and grow online shops. Here I write about SEO, marketing and programming, and share the tools, modules and themes I make along the way.

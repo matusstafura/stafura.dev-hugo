@@ -1,0 +1,21 @@
+{{ define "main" }}
+{{- partial "page-header.html" (dict "title" .Title "description" .Description) }}
+{{- if .Content }}
+<div class="px-5 py-10 sm:px-8">
+  <div class="prose prose-lg">{{ .Content }}</div>
+</div>
+{{- end }}
+{{- with .Paginator.Pages }}
+{{- range .GroupByDate "2006" }}
+<section aria-labelledby="y{{ .Key }}">
+  <h2 id="y{{ .Key }}" class="label border-b border-line bg-tint px-5 py-2 text-ink sm:px-8">{{ .Key }}</h2>
+  <ul class="divide-y divide-line border-b border-line">
+    {{- range .Pages }}
+    {{ partial "post-row.html" . }}
+    {{- end }}
+  </ul>
+</section>
+{{- end }}
+{{- end }}
+{{- template "_internal/pagination.html" . }}
+{{ end }}

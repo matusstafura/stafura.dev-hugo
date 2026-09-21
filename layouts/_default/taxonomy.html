@@ -1,0 +1,8 @@
+{{ define "main" }}
+{{- partial "page-header.html" (dict "title" .Title) }}
+<ul class="flex flex-wrap gap-x-6 gap-y-3 px-5 py-10 font-mono text-sm sm:px-8">
+  {{- range .Data.Terms.Alphabetical }}
+  <li><a href="{{ .Page.RelPermalink }}" class="link-quiet">#{{ .Page.Title }} <span class="text-muted">{{ .Count }}</span></a></li>
+  {{- end }}
+</ul>
+{{ end }}
