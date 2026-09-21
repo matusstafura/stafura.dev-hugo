@@ -24,7 +24,7 @@ npm run build    # compile + minify the CSS
 hugo             # output goes to public/
 ```
 
-`assets/css/site.css` is compiled output and is committed on purpose, so the site can be deployed with Hugo alone (no Node step). Run `npm run build` and commit it after changing anything in `styles/main.css` or adding new Tailwind classes to templates.
+`assets/css/site.css` is compiled output and is committed on purpose, so the site can be deployed with Hugo alone. Because `package.json` exists, DigitalOcean App Platform uses the Node buildpack, where `hugo` isn't on the PATH; the `hugo-bin` dev dependency provides it, and the build command should be `npm run build:site`. Run `npm run build` and commit it after changing anything in `styles/main.css` or adding new Tailwind classes to templates.
 
 ## Design system
 
