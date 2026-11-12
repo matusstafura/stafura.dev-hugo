@@ -8,13 +8,17 @@ author: "Matus Stafura"
 
 <img src="/images/profile.jpg" alt="Matus Stafura" class="not-prose mb-8 size-32 border border-edge object-cover shadow-[6px_6px_0_var(--accent)]">
 
-Hello! I'm a developer and strategist from Slovakia. Most of my time is spent at Megamix of which I'm the co-owner.
+Hello! I'm a developer and IT generalist from Slovakia.
 
-Over the past 15 years, I've helped numerous companies increase their traffic, optimize software, and improve programming, resulting in enhanced brand awareness and significant growth in revenue.
+For about 15 years I've been the go-to IT person at small e-commerce companies. I build and integrate online shops, run the Linux servers behind them, and keep the office computers, printers and network working.
 
-In addition to my work, I enjoy writing articles on software development and marketing on [https://dev.to/matusstafura](https://dev.to/matusstafura), sharing my knowledge and insights with a wider audience.
+Early on I did a lot of SEO for online shops. That's history now, but some older posts here come from that time.
 
-When it comes to programming, my tools of choice include Ubuntu, PHP, Go, bash, neovim, and tmux.
+Lately I spend more time with hardware: a homelab with Raspberry Pi and Pi-hole, building and repairing PCs, and setting up home and office networks.
+
+I also write about software development on [https://dev.to/matusstafura](https://dev.to/matusstafura).
+
+Everyday tools: Fedora and Ubuntu, PHP, Go, Python, bash, neovim and tmux.
 
 ## Contact
 

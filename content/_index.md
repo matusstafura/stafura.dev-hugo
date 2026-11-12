@@ -1,9 +1,9 @@
 ---
-title: "Matus Stafura: SEO, Marketing & Programming"
-description: "Explore Matus Stafura's expert insights on SEO strategies, digital marketing trends, and programming tips. Dive into comprehensive guides and thought-provoking articles today."
+title: "Matus Stafura: Programming, Linux & Hardware"
+description: "Practical writing on programming, Linux servers and hardware from 15 years of building and running web software."
 images: ["/images/home/og_home.jpg"]
-eyebrow: "Developer & e-commerce entrepreneur · Slovakia"
+eyebrow: "Developer & IT generalist · Slovakia"
 heading: "Hi, I'm Matus."
 ---
 
-I build e-commerce software and grow online shops. Here I write about SEO, marketing and programming, and share the tools, modules and themes I make along the way.
+I build web software and look after the Linux servers it runs on. Here I write about programming, Linux and hardware tinkering, and share the tools, modules and themes I make along the way.

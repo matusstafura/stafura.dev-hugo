@@ -52,7 +52,7 @@ defaultContentLanguageInSubdir = false
   locale = "de-DE"
   weight = 2
   [languages.de.params]
-  description = "Matus Stafura schreibt über SEO, Marketing und Programmierung."
+  description = "Matus Stafura schreibt über Programmierung, Linux und Hardware."
 
     [[languages.de.menus.main]]
     name = "Startseite"
@@ -125,7 +125,7 @@ ShowLanguageSelector = true
 author = "Matus Stafura"
 logo = "images/code.png"
 favicon = "images/favicon/favicon.ico"
-description = "Matus Stafura writes about SEO, marketing, and programming."
+description = "Matus Stafura writes about programming, Linux and hardware."
 images = ["/images/home/og_home.jpg"]
 
   [params.plugins]
@@ -163,8 +163,7 @@ category = "categories"
 
 [params.person]
   name = "Matus Stafura"
-  jobTitle = "Developer & E-commerce Entrepreneur"
-  company = "Megamix s.r.o."
+  jobTitle = "Software Developer & IT Generalist"
   image = "/images/profile.jpg"
 
   languages = [
@@ -180,8 +179,10 @@ category = "categories"
     "Python",
     "Laravel",
     "Magento 2",
-    "E-commerce",
-    "SEO"
+    "Linux",
+    "Bash",
+    "Docker",
+    "Networking"
   ]
 
   sameAs = [

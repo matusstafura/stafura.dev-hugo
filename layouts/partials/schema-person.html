@@ -6,10 +6,12 @@
   "url": {{ .Site.BaseURL | jsonify }},
   "image": {{ printf "%s%s" .Site.BaseURL .Site.Params.person.image | jsonify }},
   "jobTitle": {{ .Site.Params.person.jobTitle | jsonify }},
+  {{- with .Site.Params.person.company }}
   "worksFor": {
     "@type": "Organization",
-    "name": {{ .Site.Params.person.company | jsonify }}
+    "name": {{ . | jsonify }}
   },
+  {{- end }}
   "knowsLanguage": {{ .Site.Params.person.languages | jsonify }},
   "knowsAbout": {{ .Site.Params.person.skills | jsonify }},
   "sameAs": {{ .Site.Params.person.sameAs | jsonify }}
